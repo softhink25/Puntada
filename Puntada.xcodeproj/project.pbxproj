@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB753E662537D66600B097EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB753E652537D66600B097EF /* AppDelegate.swift */; };
+		BB753E682537D66600B097EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB753E672537D66600B097EF /* ViewController.swift */; };
+		BB753E6B2537D66600B097EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB753E692537D66600B097EF /* Main.storyboard */; };
+		BB753E6D2537D66700B097EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB753E6C2537D66700B097EF /* Assets.xcassets */; };
+		BB753E702537D66700B097EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB753E6E2537D66700B097EF /* LaunchScreen.storyboard */; };
+		BB753E7B2537D66700B097EF /* PuntadaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB753E7A2537D66700B097EF /* PuntadaTests.swift */; };
+		BB753E862537D66700B097EF /* PuntadaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB753E852537D66700B097EF /* PuntadaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB753E772537D66700B097EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB753E5A2537D66600B097EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB753E612537D66600B097EF;
+			remoteInfo = Puntada;
+		};
+		BB753E822537D66700B097EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB753E5A2537D66600B097EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB753E612537D66600B097EF;
+			remoteInfo = Puntada;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BB753E622537D66600B097EF /* Puntada.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Puntada.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB753E652537D66600B097EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB753E672537D66600B097EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BB753E6A2537D66600B097EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB753E6C2537D66700B097EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB753E6F2537D66700B097EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BB753E712537D66700B097EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB753E762537D66700B097EF /* PuntadaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PuntadaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB753E7A2537D66700B097EF /* PuntadaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuntadaTests.swift; sourceTree = "<group>"; };
+		BB753E7C2537D66700B097EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB753E812537D66700B097EF /* PuntadaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PuntadaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB753E852537D66700B097EF /* PuntadaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuntadaUITests.swift; sourceTree = "<group>"; };
+		BB753E872537D66700B097EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB753E5F2537D66600B097EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB753E732537D66700B097EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB753E7E2537D66700B097EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB753E592537D66600B097EF = {
+			isa = PBXGroup;
+			children = (
+				BB753E642537D66600B097EF /* Puntada */,
+				BB753E792537D66700B097EF /* PuntadaTests */,
+				BB753E842537D66700B097EF /* PuntadaUITests */,
+				BB753E632537D66600B097EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB753E632537D66600B097EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB753E622537D66600B097EF /* Puntada.app */,
+				BB753E762537D66700B097EF /* PuntadaTests.xctest */,
+				BB753E812537D66700B097EF /* PuntadaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB753E642537D66600B097EF /* Puntada */ = {
+			isa = PBXGroup;
+			children = (
+				BB753E652537D66600B097EF /* AppDelegate.swift */,
+				BB753E672537D66600B097EF /* ViewController.swift */,
+				BB753E692537D66600B097EF /* Main.storyboard */,
+				BB753E6C2537D66700B097EF /* Assets.xcassets */,
+				BB753E6E2537D66700B097EF /* LaunchScreen.storyboard */,
+				BB753E712537D66700B097EF /* Info.plist */,
+			);
+			path = Puntada;
+			sourceTree = "<group>";
+		};
+		BB753E792537D66700B097EF /* PuntadaTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB753E7A2537D66700B097EF /* PuntadaTests.swift */,
+				BB753E7C2537D66700B097EF /* Info.plist */,
+			);
+			path = PuntadaTests;
+			sourceTree = "<group>";
+		};
+		BB753E842537D66700B097EF /* PuntadaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BB753E852537D66700B097EF /* PuntadaUITests.swift */,
+				BB753E872537D66700B097EF /* Info.plist */,
+			);
+			path = PuntadaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB753E612537D66600B097EF /* Puntada */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB753E8A2537D66700B097EF /* Build configuration list for PBXNativeTarget "Puntada" */;
+			buildPhases = (
+				BB753E5E2537D66600B097EF /* Sources */,
+				BB753E5F2537D66600B097EF /* Frameworks */,
+				BB753E602537D66600B097EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Puntada;
+			productName = Puntada;
+			productReference = BB753E622537D66600B097EF /* Puntada.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB753E752537D66700B097EF /* PuntadaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB753E8D2537D66700B097EF /* Build configuration list for PBXNativeTarget "PuntadaTests" */;
+			buildPhases = (
+				BB753E722537D66700B097EF /* Sources */,
+				BB753E732537D66700B097EF /* Frameworks */,
+				BB753E742537D66700B097EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB753E782537D66700B097EF /* PBXTargetDependency */,
+			);
+			name = PuntadaTests;
+			productName = PuntadaTests;
+			productReference = BB753E762537D66700B097EF /* PuntadaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BB753E802537D66700B097EF /* PuntadaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB753E902537D66700B097EF /* Build configuration list for PBXNativeTarget "PuntadaUITests" */;
+			buildPhases = (
+				BB753E7D2537D66700B097EF /* Sources */,
+				BB753E7E2537D66700B097EF /* Frameworks */,
+				BB753E7F2537D66700B097EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB753E832537D66700B097EF /* PBXTargetDependency */,
+			);
+			name = PuntadaUITests;
+			productName = PuntadaUITests;
+			productReference = BB753E812537D66700B097EF /* PuntadaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB753E5A2537D66600B097EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Softhink;
+				TargetAttributes = {
+					BB753E612537D66600B097EF = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					BB753E752537D66700B097EF = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = BB753E612537D66600B097EF;
+					};
+					BB753E802537D66700B097EF = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = BB753E612537D66600B097EF;
+					};
+				};
+			};
+			buildConfigurationList = BB753E5D2537D66600B097EF /* Build configuration list for PBXProject "Puntada" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB753E592537D66600B097EF;
+			productRefGroup = BB753E632537D66600B097EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB753E612537D66600B097EF /* Puntada */,
+				BB753E752537D66700B097EF /* PuntadaTests */,
+				BB753E802537D66700B097EF /* PuntadaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB753E602537D66600B097EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB753E702537D66700B097EF /* LaunchScreen.storyboard in Resources */,
+				BB753E6D2537D66700B097EF /* Assets.xcassets in Resources */,
+				BB753E6B2537D66600B097EF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB753E742537D66700B097EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB753E7F2537D66700B097EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB753E5E2537D66600B097EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB753E682537D66600B097EF /* ViewController.swift in Sources */,
+				BB753E662537D66600B097EF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB753E722537D66700B097EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB753E7B2537D66700B097EF /* PuntadaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB753E7D2537D66700B097EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB753E862537D66700B097EF /* PuntadaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB753E782537D66700B097EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB753E612537D66600B097EF /* Puntada */;
+			targetProxy = BB753E772537D66700B097EF /* PBXContainerItemProxy */;
+		};
+		BB753E832537D66700B097EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB753E612537D66600B097EF /* Puntada */;
+			targetProxy = BB753E822537D66700B097EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BB753E692537D66600B097EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB753E6A2537D66600B097EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BB753E6E2537D66700B097EF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB753E6F2537D66700B097EF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB753E882537D66700B097EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB753E892537D66700B097EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB753E8B2537D66700B097EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Puntada/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.puntada.Puntada;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB753E8C2537D66700B097EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Puntada/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.puntada.Puntada;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BB753E8E2537D66700B097EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PuntadaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.puntada.PuntadaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Puntada.app/Puntada";
+			};
+			name = Debug;
+		};
+		BB753E8F2537D66700B097EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PuntadaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.puntada.PuntadaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Puntada.app/Puntada";
+			};
+			name = Release;
+		};
+		BB753E912537D66700B097EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PuntadaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.puntada.PuntadaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Puntada;
+			};
+			name = Debug;
+		};
+		BB753E922537D66700B097EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PuntadaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.puntada.PuntadaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Puntada;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB753E5D2537D66600B097EF /* Build configuration list for PBXProject "Puntada" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB753E882537D66700B097EF /* Debug */,
+				BB753E892537D66700B097EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB753E8A2537D66700B097EF /* Build configuration list for PBXNativeTarget "Puntada" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB753E8B2537D66700B097EF /* Debug */,
+				BB753E8C2537D66700B097EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB753E8D2537D66700B097EF /* Build configuration list for PBXNativeTarget "PuntadaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB753E8E2537D66700B097EF /* Debug */,
+				BB753E8F2537D66700B097EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB753E902537D66700B097EF /* Build configuration list for PBXNativeTarget "PuntadaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB753E912537D66700B097EF /* Debug */,
+				BB753E922537D66700B097EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB753E5A2537D66600B097EF /* Project object */;
+}
