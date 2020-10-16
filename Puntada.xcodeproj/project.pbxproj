@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A527E130BC750550A9C46F76 /* Pods_Puntada.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45516CA7C49BC0557F0CD35C /* Pods_Puntada.framework */; };
 		BB753E662537D66600B097EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB753E652537D66600B097EF /* AppDelegate.swift */; };
 		BB753E682537D66600B097EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB753E672537D66600B097EF /* ViewController.swift */; };
 		BB753E6B2537D66600B097EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB753E692537D66600B097EF /* Main.storyboard */; };
@@ -34,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3258C06B5EB558E60718F353 /* Pods-Puntada.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Puntada.release.xcconfig"; path = "Target Support Files/Pods-Puntada/Pods-Puntada.release.xcconfig"; sourceTree = "<group>"; };
+		45516CA7C49BC0557F0CD35C /* Pods_Puntada.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Puntada.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D70A260B15AB69C4AE4D499 /* Pods-Puntada.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Puntada.debug.xcconfig"; path = "Target Support Files/Pods-Puntada/Pods-Puntada.debug.xcconfig"; sourceTree = "<group>"; };
 		BB753E622537D66600B097EF /* Puntada.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Puntada.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB753E652537D66600B097EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB753E672537D66600B097EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A527E130BC750550A9C46F76 /* Pods_Puntada.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,8 @@
 				BB753E792537D66700B097EF /* PuntadaTests */,
 				BB753E842537D66700B097EF /* PuntadaUITests */,
 				BB753E632537D66600B097EF /* Products */,
+				E36D45ED4DD4E6CCC247E0DF /* Pods */,
+				EC25009BCD031214010FF5BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +132,24 @@
 			path = PuntadaUITests;
 			sourceTree = "<group>";
 		};
+		E36D45ED4DD4E6CCC247E0DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D70A260B15AB69C4AE4D499 /* Pods-Puntada.debug.xcconfig */,
+				3258C06B5EB558E60718F353 /* Pods-Puntada.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EC25009BCD031214010FF5BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45516CA7C49BC0557F0CD35C /* Pods_Puntada.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +157,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB753E8A2537D66700B097EF /* Build configuration list for PBXNativeTarget "Puntada" */;
 			buildPhases = (
+				48DC829C9E49BFF2D46992AB /* [CP] Check Pods Manifest.lock */,
 				BB753E5E2537D66600B097EF /* Sources */,
 				BB753E5F2537D66600B097EF /* Frameworks */,
 				BB753E602537D66600B097EF /* Resources */,
+				982ACF265528A68BB70A3D33 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -188,7 +215,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = Softhink;
 				TargetAttributes = {
 					BB753E612537D66600B097EF = {
@@ -250,6 +277,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		48DC829C9E49BFF2D46992AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Puntada-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		982ACF265528A68BB70A3D33 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Puntada/Pods-Puntada-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Puntada/Pods-Puntada-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Puntada/Pods-Puntada-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BB753E5E2537D66600B097EF /* Sources */ = {
@@ -338,6 +407,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -363,7 +433,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -399,6 +469,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -418,7 +489,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -430,6 +501,7 @@
 		};
 		BB753E8B2537D66700B097EF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D70A260B15AB69C4AE4D499 /* Pods-Puntada.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +520,7 @@
 		};
 		BB753E8C2537D66700B097EF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3258C06B5EB558E60718F353 /* Pods-Puntada.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
