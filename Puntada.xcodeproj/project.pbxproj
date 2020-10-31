@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,9 @@
 		BB753E702537D66700B097EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB753E6E2537D66700B097EF /* LaunchScreen.storyboard */; };
 		BB753E7B2537D66700B097EF /* PuntadaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB753E7A2537D66700B097EF /* PuntadaTests.swift */; };
 		BB753E862537D66700B097EF /* PuntadaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB753E852537D66700B097EF /* PuntadaUITests.swift */; };
+		CE8C50F3254BD4BD00F303E7 /* menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8C50F2254BD4BD00F303E7 /* menu.swift */; };
+		CE8C50FF254BD5D000F303E7 /* tcMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8C50FE254BD5D000F303E7 /* tcMenu.swift */; };
+		CE8C5104254BD62900F303E7 /* tcUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8C5103254BD62900F303E7 /* tcUser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		BB753E812537D66700B097EF /* PuntadaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PuntadaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB753E852537D66700B097EF /* PuntadaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuntadaUITests.swift; sourceTree = "<group>"; };
 		BB753E872537D66700B097EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE8C50F2254BD4BD00F303E7 /* menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menu.swift; sourceTree = "<group>"; };
+		CE8C50FE254BD5D000F303E7 /* tcMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tcMenu.swift; sourceTree = "<group>"; };
+		CE8C5103254BD62900F303E7 /* tcUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tcUser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +110,9 @@
 		BB753E642537D66600B097EF /* Puntada */ = {
 			isa = PBXGroup;
 			children = (
+				CE8C50FA254BD56300F303E7 /* tableCell */,
+				CE8C50F1254BD47400F303E7 /* viewController */,
 				BB753E652537D66600B097EF /* AppDelegate.swift */,
-				BB753E672537D66600B097EF /* ViewController.swift */,
 				BB753E692537D66600B097EF /* Main.storyboard */,
 				BB753E6C2537D66700B097EF /* Assets.xcassets */,
 				BB753E6E2537D66700B097EF /* LaunchScreen.storyboard */,
@@ -132,13 +139,30 @@
 			path = PuntadaUITests;
 			sourceTree = "<group>";
 		};
+		CE8C50F1254BD47400F303E7 /* viewController */ = {
+			isa = PBXGroup;
+			children = (
+				BB753E672537D66600B097EF /* ViewController.swift */,
+				CE8C50F2254BD4BD00F303E7 /* menu.swift */,
+			);
+			path = viewController;
+			sourceTree = "<group>";
+		};
+		CE8C50FA254BD56300F303E7 /* tableCell */ = {
+			isa = PBXGroup;
+			children = (
+				CE8C50FE254BD5D000F303E7 /* tcMenu.swift */,
+				CE8C5103254BD62900F303E7 /* tcUser.swift */,
+			);
+			path = tableCell;
+			sourceTree = "<group>";
+		};
 		E36D45ED4DD4E6CCC247E0DF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				9D70A260B15AB69C4AE4D499 /* Pods-Puntada.debug.xcconfig */,
 				3258C06B5EB558E60718F353 /* Pods-Puntada.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -327,6 +351,9 @@
 			files = (
 				BB753E682537D66600B097EF /* ViewController.swift in Sources */,
 				BB753E662537D66600B097EF /* AppDelegate.swift in Sources */,
+				CE8C50F3254BD4BD00F303E7 /* menu.swift in Sources */,
+				CE8C5104254BD62900F303E7 /* tcUser.swift in Sources */,
+				CE8C50FF254BD5D000F303E7 /* tcMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,7 +532,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = A47J4C7AJ6;
 				INFOPLIST_FILE = Puntada/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
