@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="27px" viewBox="0 0 36 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>gmail logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0.135201493 4.1422125 0.135201493 4.1422125 24.75 0 24.75"></polygon>
+        <polygon id="path-3" points="0.2743125 0.135201493 4.416375 0.135201493 4.416375 24.75 0.2743125 24.75"></polygon>
+        <polygon id="path-5" points="0.000144 0.120988636 35.91972 0.120988636 35.91972 15.4938119 0.000144 15.4938119"></polygon>
+        <polygon id="path-7" points="0 0.278030769 4.1422125 0.278030769 4.1422125 4.40210769 0 4.40210769"></polygon>
+        <polygon id="path-9" points="0.2743125 0.278065385 4.416375 0.278065385 4.416375 4.40214231 0.2743125 4.40214231"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-11---Login" transform="translate(-217.000000, -285.000000)">
+            <g id="gmail-logo" transform="translate(217.000000, 285.000000)">
+                <g id="Group-3" transform="translate(0.000000, 2.250000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M4.1422125,3.21380597 L4.1422125,24.75 L2.4239625,24.75 C1.0908375,24.75 -3.75e-05,23.6754067 -3.75e-05,22.3618097 L-3.75e-05,0.135201493 L4.1422125,3.21380597 Z" id="Fill-1" fill="#D43A29" mask="url(#mask-2)"></path>
+                </g>
+                <g id="Group-6" transform="translate(31.500000, 2.250000)">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <g id="Clip-5"></g>
+                    <path d="M0.2743125,3.21380597 L0.2743125,24.75 L1.9925625,24.75 C3.3253125,24.75 4.4165625,23.6754067 4.4165625,22.3618097 L4.4165625,0.135201493 L0.2743125,3.21380597 Z" id="Fill-4" fill="#D43A29" mask="url(#mask-4)"></path>
+                </g>
+                <polygon id="Fill-7" fill="#EEEFEF" points="21.375 27 3.45075195 27 3.375 27 14.1180375 19.125 3.375 27 14.1180375 19.125"></polygon>
+                <polygon id="Fill-9" fill="#B3A4A2" points="3.375 6.75 17.4375 16.3684101 31.499638 6.75 31.5 6.87593195 17.4375 16.875 3.375 6.87593195"></polygon>
+                <polygon id="Fill-11" fill="#CBCECF" points="18 16.5839221 4.54274902 6.78131486 4.5 6.75 4.5 8.14579839 4.55213295 8.20244662 14.555055 19.125"></polygon>
+                <polygon id="Fill-13" fill="#DFE1E2" points="4.5 27 14.625 19.2895691 4.5 7.875"></polygon>
+                <polygon id="Fill-15" fill="#E3E3E3" points="21.8401369 27 32.625 27 32.625 6.75 18.2844401 16.8116377 14.625 19.4116502"></polygon>
+                <polygon id="Fill-17" fill="#F2F2F2" points="2.25 0 34.875 0.0049557792 18.5171845 11.25"></polygon>
+                <g id="Group-21">
+                    <mask id="mask-6" fill="white">
+                        <use xlink:href="#path-5"></use>
+                    </mask>
+                    <g id="Clip-20"></g>
+                    <path d="M3.117744,0.470459659 L17.959824,10.6854085 L32.802264,0.470459659 C33.701184,-0.14844375 34.946064,0.0767096591 35.568144,0.970880114 C35.821224,1.33384602 35.933904,1.7537267 35.918424,2.16537443 L35.918424,2.16609034 L35.919864,3.15118125 C35.638704,3.35772102 35.345304,3.5288233 35.065224,3.72140284 L17.959824,15.4938119 L0.854784,3.72140284 C0.574704,3.5288233 0.280944,3.35772102 0.000144,3.15118125 L0.001584,2.16609034 L0.001584,2.16537443 C-0.013896,1.7537267 0.098784,1.33384602 0.351504,0.970880114 C0.973944,0.0767096591 2.218464,-0.14844375 3.117744,0.470459659" id="Fill-19" fill="#DF4C3A" mask="url(#mask-6)"></path>
+                </g>
+                <g id="Group-24" transform="translate(0.000000, 3.375000)">
+                    <mask id="mask-8" fill="white">
+                        <use xlink:href="#path-7"></use>
+                    </mask>
+                    <g id="Clip-23"></g>
+                    <polygon id="Fill-22" fill="#B93A28" mask="url(#mask-8)" points="4.1422125 2.90741538 -3.75e-05 0.278030769 4.1422125 4.40210769"></polygon>
+                </g>
+                <g id="Group-27" transform="translate(31.500000, 3.375000)">
+                    <mask id="mask-10" fill="white">
+                        <use xlink:href="#path-9"></use>
+                    </mask>
+                    <g id="Clip-26"></g>
+                    <polygon id="Fill-25" fill="#B93A28" mask="url(#mask-10)" points="0.2743125 2.90710385 4.4165625 0.278065385 0.2743125 4.40214231"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
