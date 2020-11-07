@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "closure #1 in RemoteRequest.jsonByRequestPost(requestUrl:parameters:completeHandler:errorHandler:loadingMessage:view:showDialogs:):RemoteRequest.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "json[&quot;result&quot;][&quot;success&quot;] ">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "menu.tableView(_:cellForRowAt:):menu.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "cell.lblPuntos">
+            </PersistentString>
+            <PersistentString
+               value = "cell.btnMenuAccion">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
