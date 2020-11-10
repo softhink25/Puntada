@@ -1,6 +1,10 @@
 PODS:
-  - Alamofire (5.4.0)
+  - Alamofire (4.9.1)
+  - Alamofire-SwiftyJSON (3.0.0):
+    - Alamofire (~> 4.5)
+    - SwiftyJSON (~> 4.0.0)
   - CryptoSwift (1.3.2)
+  - IQKeyboardManagerSwift (6.5.6)
   - KVNProgress (2.3.5)
   - Material (3.1.8):
     - Material/Core (= 3.1.8)
@@ -11,27 +15,27 @@ PODS:
     - Motion/Core (= 3.1.3)
   - Motion/Core (3.1.3)
   - SideMenu (6.5.0)
-  - SwiftyJSON (5.0.0)
+  - SwiftyJSON (4.0.0)
   - UICheckbox (0.0.2)
-  - ZVActivityIndicatorView (0.2.3)
-  - ZVProgressHUD (2.6.1):
-    - ZVActivityIndicatorView
 
 DEPENDENCIES:
   - Alamofire
+  - Alamofire-SwiftyJSON
   - CryptoSwift
+  - IQKeyboardManagerSwift
   - KVNProgress
   - Material
   - MaterialTextField
   - SideMenu (~> 6.0)
   - SwiftyJSON
   - UICheckbox
-  - ZVProgressHUD
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
+    - Alamofire-SwiftyJSON
     - CryptoSwift
+    - IQKeyboardManagerSwift
     - KVNProgress
     - Material
     - MaterialTextField
@@ -39,22 +43,20 @@ SPEC REPOS:
     - SideMenu
     - SwiftyJSON
     - UICheckbox
-    - ZVActivityIndicatorView
-    - ZVProgressHUD
 
 SPEC CHECKSUMS:
-  Alamofire: 3b6a534a3df22db367e4dedeeca73d1ddfcf0e2f
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Alamofire-SwiftyJSON: 2b3649d57dc7bb2880fb8b86f8bb969397666916
   CryptoSwift: 093499be1a94b0cae36e6c26b70870668cb56060
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
   KVNProgress: d7046cce142f1aeb740db39dc3cacfe910fac354
   Material: a2a3f400a3b549d53ef89e56c58c4535b29db387
   MaterialTextField: f1a0786588e4d3610cb9bb62d2adbe9777cebbf9
   Motion: cf1e060e489f6661126374d5c60dbd2ed991605c
   SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
-  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
   UICheckbox: 54af9bc308c8c2b18404f4c360172115c0daea36
-  ZVActivityIndicatorView: 7e79667deaaeeb8f92bb8b4f6ac746e3d9c95058
-  ZVProgressHUD: 7f6340cf835deaf0f1ef1f95ef889aa4f3d165d0
 
-PODFILE CHECKSUM: a73465a60f7a9e4626bce349c24be20c3cd710a9
+PODFILE CHECKSUM: c1558792996e07901dcfcac0d8c0ea97ddb18730
 
 COCOAPODS: 1.9.3

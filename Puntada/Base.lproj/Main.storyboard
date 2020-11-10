@@ -9,12 +9,12 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Puntada" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="Puntada" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UpG-pR-pEh">
@@ -29,10 +29,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="hIf-ve-X7x"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-269" y="223"/>
+            <point key="canvasLocation" x="-680" y="-548"/>
         </scene>
         <!--LoginVC-->
         <scene sceneID="P9Y-Yt-aLG">
@@ -138,7 +139,7 @@
                                                 <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="placeholderAnimatesOnFocus" value="YES"/>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="errorColor">
@@ -173,6 +174,9 @@
                                         </state>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="dCm-6h-wWa"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="dividerThickness">
                                         <real key="value" value="0.0"/>
@@ -244,16 +248,17 @@
                     <connections>
                         <outlet property="txtContrasena" destination="3YA-uz-xZu" id="hjr-WZ-5G2"/>
                         <outlet property="txtUsuario" destination="RRj-Hv-DvY" id="sf1-jI-uLy"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="home" id="tjA-dR-BpX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l1o-QW-qZy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-899" y="-547"/>
+            <point key="canvasLocation" x="-1356" y="-548"/>
         </scene>
-        <!--Menu-->
+        <!--MenuVC-->
         <scene sceneID="sLT-s0-3bC">
             <objects>
-                <tableViewController id="wFs-pZ-Mig" customClass="menu" customModule="Puntada" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="wFs-pZ-Mig" customClass="menuVC" customModule="Puntada" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="jFz-vb-A9b">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -385,7 +390,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u3F-SC-tjw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-269" y="-548"/>
+            <point key="canvasLocation" x="17" y="-548"/>
         </scene>
         <!--Side Menu Navigation Controller-->
         <scene sceneID="shr-iM-m9C">
@@ -404,7 +409,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uhc-GO-6dI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="346" y="-548"/>
+            <point key="canvasLocation" x="767" y="-548"/>
         </scene>
         <!--RegistroVC-->
         <scene sceneID="k5y-iB-vIT">
@@ -755,7 +760,7 @@ y encontrar increíbles promociones.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5kN-59-ZF6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2279" y="-533"/>
+            <point key="canvasLocation" x="-1117" y="161"/>
         </scene>
         <!--ParametroVC-->
         <scene sceneID="57t-ZW-q7w">
@@ -841,7 +846,7 @@ y encontrar increíbles promociones.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HBu-c1-lHx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1602" y="-533"/>
+            <point key="canvasLocation" x="-241" y="146"/>
         </scene>
     </scenes>
     <resources>

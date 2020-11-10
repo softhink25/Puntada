@@ -7,34 +7,41 @@
 //
 
 import UIKit
+import CryptoSwift
+import SwiftyJSON 
 
-class LoginVC: UIViewController {
+class LoginVC: UIViewController   {
+    
     @IBOutlet weak var txtUsuario: UITextField!
     
     @IBOutlet weak var txtContrasena: UITextField!
     @IBAction func btnEntrarAccion(_ sender: UIButton) {
-        let r = RemoteRequest();
         let url:URL = URL(string: Constants.LOGIN)! ;
-        let parameters = [ "usu_clave": txtUsuario!.text,"usu_contrasena":txtContrasena!.text];
-        r.jsonByRequestPost(requestUrl: url, parameters: parameters as [String : Any], completeHandler: { (response) in
-//            print(response)
+        let pwd = txtContrasena!.text! as String;
+        let parameters = [ "usu_clave": txtUsuario!.text!, "usu_contrasena":pwd.md5()  ] as [String : Any];
+        RemoteRequest.jsonByRequestPost(requestUrl: url, parameters: parameters as [String : Any], completeHandler: { (response) in
+            if(response?["result"]["success"].bool ?? false){
+//                Utils.setData(data: response?["result"]["user_data"] as Any, key: "user_data")
+                Utils.setData(data: response?["result"]["access_token"].string, key: "access_token")
+                self.performSegue(withIdentifier: "home", sender: nil)
+                
+                }
             }, errorHandler: nil, loadingMessage: "Cargando..", view: self.view, showDialogs: true)
     }
+   
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+ 
+     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "home"{
+
+//                let destView = segue.destination as! HomeViewController
+        }
     }
-    */
 
 }

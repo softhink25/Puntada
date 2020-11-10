@@ -8,7 +8,7 @@
 
 import UIKit
 
-class menu: UITableViewController {
+class menuVC: UITableViewController {
 
     @IBOutlet var tblMenu: UITableView!
     var menuItems: [menuItem] = [menuItem(etiqueta: "", segue: ""),menuItem(etiqueta: "Editar Perfil", segue: "editarPerfilSegue"),menuItem(etiqueta: "Cómo Funciona", segue: "comoFuncionaSegue"),menuItem(etiqueta: "Servicio al Cliente", segue: "servicioSegue"),menuItem(etiqueta: "Aviso de Privacidad", segue: "AvisoSegue"),menuItem(etiqueta: "Términos y condiciones", segue: "Terminos y Condiciones")]

@@ -4,7 +4,7 @@ use_frameworks!
 target 'Puntada' do
   project 'Puntada'
 
-pod 'ZVProgressHUD'
+#pod 'ZVProgressHUD'
 pod 'CryptoSwift'
 pod 'Alamofire'
 pod 'Material'
@@ -14,4 +14,6 @@ pod 'SwiftyJSON'
 pod 'KVNProgress'
 # For Swift 5 use:
 pod 'SideMenu', '~> 6.0'
+pod 'IQKeyboardManagerSwift'
+pod 'Alamofire-SwiftyJSON'
 end 

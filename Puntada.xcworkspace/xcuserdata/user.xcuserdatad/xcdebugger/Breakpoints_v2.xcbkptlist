@@ -23,70 +23,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "BAADA244-A96B-447B-9D65-D765B974B8D7"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Puntada/AppDelegate.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "1E177FBF-4101-4386-AB07-F3477507445E"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Puntada/viewController/LoginVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "btnEntrarAccion(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "1E177FBF-4101-4386-AB07-F3477507445E - 940e939f7b0c0a7d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Puntada.LoginVC.btnEntrarAccion(__C.UIButton) -&gt; ()"
-                  moduleName = "Puntada"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/user/Documents/Puntada/Puntada/viewController/LoginVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
-                  offsetFromSymbolStart = "1506">
-               </Location>
-               <Location
-                  uuid = "1E177FBF-4101-4386-AB07-F3477507445E - ecd5b281727f6549"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;SwiftyJSON.JSON&gt;) -&gt; () in Puntada.LoginVC.btnEntrarAccion(__C.UIButton) -&gt; ()"
-                  moduleName = "Puntada"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/user/Documents/Puntada/Puntada/viewController/LoginVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
-                  offsetFromSymbolStart = "16">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "F5DB5793-61B5-4541-8823-600C2BDB307C"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -145,6 +81,22 @@
             startingLineNumber = "71"
             endingLineNumber = "71"
             landmarkName = "jsonByRequestPost(requestUrl:parameters:completeHandler:errorHandler:loadingMessage:view:showDialogs:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8085B6A7-D7F7-4FF8-8182-BDBE847DBE70"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Puntada/clases/Utils.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "setData(data:key:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
