@@ -11,11 +11,11 @@ import UIKit
 class menu: UITableViewController {
 
     @IBOutlet var tblMenu: UITableView!
-//    var
+    var menuItems: [menuItem] = [menuItem(etiqueta: "", segue: ""),menuItem(etiqueta: "Editar Perfil", segue: "editarPerfilSegue"),menuItem(etiqueta: "Cómo Funciona", segue: "comoFuncionaSegue"),menuItem(etiqueta: "Servicio al Cliente", segue: "servicioSegue"),menuItem(etiqueta: "Aviso de Privacidad", segue: "AvisoSegue"),menuItem(etiqueta: "Términos y condiciones", segue: "Terminos y Condiciones")]
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tblMenu.register(tcUser.self, forCellReuseIdentifier: "tcUser")
-        self.tblMenu.register(tcMenu.self, forCellReuseIdentifier: "tcMenu")
+//        self.tblMenu.register(tcUser.self, forCellReuseIdentifier: "tcUser")
+//        self.tblMenu.register(tcMenu.self, forCellReuseIdentifier: "tcMenu")
 
         self.tblMenu.dataSource = self;
         self.tblMenu.delegate = self;
@@ -35,7 +35,7 @@ class menu: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 6
+        return menuItems.count;
     }
  
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -46,8 +46,9 @@ class menu: UITableViewController {
         
         if (indexPath.row > 0){
             let cell:tcMenu = tableView.dequeueReusableCell(withIdentifier: tipo, for: indexPath) as! tcMenu
-            cell.btnMenuAccion?.setTitle("uno",for: .normal)
             
+            let item:menuItem = menuItems[indexPath.row]
+            cell.btnMenuAccion?.setTitle(item.etiqueta,for: .normal)
             return cell;
 //            cell.btnMenuAccion.title( "");
         }else{
@@ -59,6 +60,15 @@ class menu: UITableViewController {
         // Configure the cell...
 
 //        return cell
+    }
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+       
+        if (indexPath.row > 0){
+            return 40;
+        }else{
+            return 200;
+        }
+        
     }
 
     
