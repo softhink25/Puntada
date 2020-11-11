@@ -16,4 +16,8 @@ pod 'KVNProgress'
 pod 'SideMenu', '~> 6.0'
 pod 'IQKeyboardManagerSwift'
 pod 'Alamofire-SwiftyJSON'
+pod 'FacebookCore'
+pod 'FacebookLogin'
+pod 'FacebookShare'
+pod 'FBSDKLoginKit'
 end 

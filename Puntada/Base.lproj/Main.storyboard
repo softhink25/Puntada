@@ -52,15 +52,10 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="7Uo-ya-olf">
                                 <rect key="frame" x="30" y="239" width="368" height="40"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDD-2G-RSc">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Ak-zP-vWJ">
                                         <rect key="frame" x="0.0" y="0.0" width="176.66666666666666" height="40"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                        <state key="normal" title=" Entrar con Facebook" image="facebok logo">
-                                            <color key="titleColor" red="0.0" green="0.27446874980000002" blue="0.72931301589999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ac-NW-yHC">
                                         <rect key="frame" x="191.66666666666663" y="0.0" width="176.33333333333337" height="40"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -246,6 +241,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="fbButtonContainer" destination="7Ak-zP-vWJ" id="WMD-9s-mFE"/>
                         <outlet property="txtContrasena" destination="3YA-uz-xZu" id="hjr-WZ-5G2"/>
                         <outlet property="txtUsuario" destination="RRj-Hv-DvY" id="sf1-jI-uLy"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="home" id="tjA-dR-BpX"/>
@@ -856,7 +852,6 @@ y encontrar increíbles promociones.</string>
         <image name="User icon" width="15" height="17"/>
         <image name="User icon on" width="30" height="31"/>
         <image name="back Icon" width="32" height="25"/>
-        <image name="facebok logo" width="33" height="34"/>
         <image name="gmail logo" width="36" height="27"/>
         <image name="hamburguesa" width="512" height="512"/>
         <image name="progress-30%" width="545" height="545"/>

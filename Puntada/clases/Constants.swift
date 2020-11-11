@@ -13,5 +13,6 @@ class Constants: NSObject {
     static var WEBRESOURCES:String = "webresources/"
     static var USER_WS:String = SERVER+WEBRESOURCES+"UserWS/"
     static var LOGIN = USER_WS+"Login"
+    static var FB_LOGIN = USER_WS+"FacebookRegister"
     
 }

@@ -7,6 +7,23 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+<key>FacebookAutoLogAppEventsEnabled</key>
+<string>TRUE</string>
+<key>FacebookAdvertiserIDCollectionEnabled</key>
+<string>TRUE</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb809643133222832</string>
+			</array>
+		</dict>
+	</array>
+	<key>FacebookAppID</key>
+	<string>809643133222832</string>
+	<key>FacebookDisplayName</key>
+	<string>Puntada App</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
