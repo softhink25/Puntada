@@ -20,4 +20,7 @@ pod 'FacebookCore'
 pod 'FacebookLogin'
 pod 'FacebookShare'
 pod 'FBSDKLoginKit'
+pod 'GoogleSignIn', '~> 5.0'
+pod 'Presentation', '~> 4.1'
+  
 end 

@@ -8,9 +8,15 @@
 
 import UIKit
 
-class menuVC: UITableViewController {
+@objcMembers class menuVC: UITableViewController {
 
     @IBOutlet var tblMenu: UITableView!
+    @IBOutlet weak var imgUsuario: UIImageView!
+    @IBOutlet weak var lblUsuario: UILabel!
+    @IBOutlet weak var lblPuntos: UILabel!
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
     var menuItems: [menuItem] = [menuItem(etiqueta: "", segue: ""),menuItem(etiqueta: "Editar Perfil", segue: "editarPerfilSegue"),menuItem(etiqueta: "Cómo Funciona", segue: "comoFuncionaSegue"),menuItem(etiqueta: "Servicio al Cliente", segue: "servicioSegue"),menuItem(etiqueta: "Aviso de Privacidad", segue: "AvisoSegue"),menuItem(etiqueta: "Términos y condiciones", segue: "Terminos y Condiciones")]
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +31,9 @@ class menuVC: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        despachar(item: menuItems[indexPath.row])
+    }
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -46,27 +54,42 @@ class menuVC: UITableViewController {
         
         if (indexPath.row > 0){
             let cell:tcMenu = tableView.dequeueReusableCell(withIdentifier: tipo, for: indexPath) as! tcMenu
-            
             let item:menuItem = menuItems[indexPath.row]
-            cell.btnMenuAccion?.setTitle(item.etiqueta,for: .normal)
+            cell.lblMenu.text = item.etiqueta
             return cell;
 //            cell.btnMenuAccion.title( "");
         }else{
             let cell:tcUser = tableView.dequeueReusableCell(withIdentifier: tipo, for: indexPath) as! tcUser
-            cell.lblPuntos?.text = "14"
-            cell.lblUsuario?.text = "Juan Pérez"
+            cell.lblPuntos?.text = "145"
+            let nombre:String = Utils.getData(key: "usu_nombre") as! String;
+            cell.lblUsuario?.text =  nombre
+            let imgUsuario = Data(base64Encoded: Utils.getData(key: "usu_imagen") as! String)
+            
+            cell.imgUsuario.layer.borderWidth = 1
+            cell.imgUsuario.layer.masksToBounds = false
+            cell.imgUsuario.layer.borderColor = UIColor.black.cgColor
+            cell.imgUsuario.layer.cornerRadius = cell.imgUsuario.frame.height/2
+            cell.imgUsuario.clipsToBounds = true
+            if let imgUsuario = imgUsuario {
+                cell.imgUsuario.image = UIImage(data: imgUsuario )
+            }
             return cell;
         }
         // Configure the cell...
 
 //        return cell
     }
+     func despachar(item:menuItem) {
+        self.performSegue(withIdentifier: item.segue, sender: self)
+    }
+    @objc func despachar() {
+            
+        }
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-       
         if (indexPath.row > 0){
             return 40;
         }else{
-            return 200;
+            return 280;
         }
         
     }

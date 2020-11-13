@@ -1,8 +1,8 @@
 //
-//  parametroVC.swift
+//  ParametroVC.swift
 //  Puntada
 //
-//  Created by José Ibarra Martínez on 05/11/20.
+//  Created by José Ibarra Martínez on 12/11/20.
 //  Copyright © 2020 Softhink. All rights reserved.
 //
 

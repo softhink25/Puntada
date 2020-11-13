@@ -57,8 +57,7 @@ class Utils{
     }
     static func setData(data:Any , key:String){
         let defaults = UserDefaults.standard;
-        let archivedObject = NSKeyedArchiver.archivedData(withRootObject: data as Any)
-        defaults.set(archivedObject, forKey: key)
+        defaults.set(data, forKey: key)
         UserDefaults.standard.synchronize()
     }
     static func getData(key:String)->Any{

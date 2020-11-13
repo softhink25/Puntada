@@ -8,9 +8,9 @@
 
 import UIKit
 
-class tcMenu: UITableViewCell {
+class tcMenu: UITableViewCell {   
+    @IBOutlet weak var lblMenu: UILabel!
     
-    @IBOutlet weak var btnMenuAccion: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

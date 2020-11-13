@@ -7,12 +7,12 @@
 //
 
 import UIKit
-
-class SideMenuVC: UIViewController {
+import SideMenu
+class SideMenuVC: SideMenuNavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     

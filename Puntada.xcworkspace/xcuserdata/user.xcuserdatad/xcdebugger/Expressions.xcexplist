@@ -3,6 +3,14 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "static Utils.getData(key:):Utils.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "defaults.value(forKey: key) !as String">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "main:AppDelegate.swift">
       </ContextState>
       <ContextState
@@ -39,7 +47,7 @@
          contextName = "LoginVC.doLogin(response:):LoginVC.swift">
          <PersistentStrings>
             <PersistentString
-               value = "response[&quot;result&quot;][&quot;user_data&quot;][&quot;usu_nombre&quot;]">
+               value = "response[&quot;result&quot;][&quot;user_data&quot;][&quot;usu_nombre&quot;].string">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -64,6 +72,22 @@
          <PersistentStrings>
             <PersistentString
                value = "Profile.current">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AppDelegate.sign(_:didSignInFor:withError:):AppDelegate.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "user.profile.givenName">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "menuVC.tableView(_:cellForRowAt:):MenuVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "Utils.getData(key: &quot;usu_nombre&quot;) !as string">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

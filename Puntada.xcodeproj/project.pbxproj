@@ -17,9 +17,11 @@
 		BB753E862537D66700B097EF /* PuntadaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB753E852537D66700B097EF /* PuntadaUITests.swift */; };
 		CE59B4B6255A3E6000B62B66 /* RemoteRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE59B4B5255A3E6000B62B66 /* RemoteRequest.swift */; };
 		CE59B4BB255A3F0300B62B66 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE59B4BA255A3F0300B62B66 /* Utils.swift */; };
+		CE59B597255CE3F800B62B66 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE59B596255CE3F800B62B66 /* GoogleService-Info.plist */; };
+		CE59B5D2255E29A100B62B66 /* ParametroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE59B5D1255E29A100B62B66 /* ParametroVC.swift */; };
+		CE59B5D7255E2B6C00B62B66 /* ComoFuncionaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE59B5D6255E2B6C00B62B66 /* ComoFuncionaVC.swift */; };
 		CE65EAB525551CCB0008B4D5 /* RegistroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE65EAB425551CCB0008B4D5 /* RegistroVC.swift */; };
 		CE65EABA255525210008B4D5 /* SideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE65EAB9255525210008B4D5 /* SideMenuVC.swift */; };
-		CE8377EA2555059400954D96 /* ParametroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8377E92555059400954D96 /* ParametroVC.swift */; };
 		CE8377F0255505D500954D96 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8377EF255505D500954D96 /* LoginVC.swift */; };
 		CE8892A6255651EF0001A739 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8892A5255651EF0001A739 /* Constants.swift */; };
 		CE8892BC2556888E0001A739 /* Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8892BB2556888E0001A739 /* Urls.swift */; };
@@ -66,9 +68,11 @@
 		BB753E872537D66700B097EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE59B4B5255A3E6000B62B66 /* RemoteRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteRequest.swift; sourceTree = "<group>"; };
 		CE59B4BA255A3F0300B62B66 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		CE59B596255CE3F800B62B66 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CE59B5D1255E29A100B62B66 /* ParametroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametroVC.swift; sourceTree = "<group>"; };
+		CE59B5D6255E2B6C00B62B66 /* ComoFuncionaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComoFuncionaVC.swift; sourceTree = "<group>"; };
 		CE65EAB425551CCB0008B4D5 /* RegistroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroVC.swift; sourceTree = "<group>"; };
 		CE65EAB9255525210008B4D5 /* SideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuVC.swift; sourceTree = "<group>"; };
-		CE8377E92555059400954D96 /* ParametroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametroVC.swift; sourceTree = "<group>"; };
 		CE8377EF255505D500954D96 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		CE8892A5255651EF0001A739 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CE8892BB2556888E0001A739 /* Urls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urls.swift; sourceTree = "<group>"; };
@@ -135,6 +139,7 @@
 				CE8C50FA254BD56300F303E7 /* table */,
 				CE8C50F1254BD47400F303E7 /* viewController */,
 				BB753E652537D66600B097EF /* AppDelegate.swift */,
+				CE59B596255CE3F800B62B66 /* GoogleService-Info.plist */,
 				BB753E692537D66600B097EF /* Main.storyboard */,
 				BB753E6C2537D66700B097EF /* Assets.xcassets */,
 				BB753E6E2537D66700B097EF /* LaunchScreen.storyboard */,
@@ -177,10 +182,11 @@
 			children = (
 				BB753E672537D66600B097EF /* HomeViewController.swift */,
 				CE8C50F2254BD4BD00F303E7 /* MenuVC.swift */,
-				CE8377E92555059400954D96 /* ParametroVC.swift */,
 				CE8377EF255505D500954D96 /* LoginVC.swift */,
 				CE65EAB425551CCB0008B4D5 /* RegistroVC.swift */,
 				CE65EAB9255525210008B4D5 /* SideMenuVC.swift */,
+				CE59B5D1255E29A100B62B66 /* ParametroVC.swift */,
+				CE59B5D6255E2B6C00B62B66 /* ComoFuncionaVC.swift */,
 			);
 			path = viewController;
 			sourceTree = "<group>";
@@ -232,6 +238,7 @@
 				BB753E5F2537D66600B097EF /* Frameworks */,
 				BB753E602537D66600B097EF /* Resources */,
 				982ACF265528A68BB70A3D33 /* [CP] Embed Pods Frameworks */,
+				F2F826BEBF431F96B6EF0B4D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -328,6 +335,7 @@
 			files = (
 				BB753E702537D66700B097EF /* LaunchScreen.storyboard in Resources */,
 				CE8C511A2550D02400F303E7 /* tcUser.xib in Resources */,
+				CE59B597255CE3F800B62B66 /* GoogleService-Info.plist in Resources */,
 				BB753E6D2537D66700B097EF /* Assets.xcassets in Resources */,
 				BB753E6B2537D66600B097EF /* Main.storyboard in Resources */,
 			);
@@ -389,6 +397,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Puntada/Pods-Puntada-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F2F826BEBF431F96B6EF0B4D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Puntada/Pods-Puntada-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Puntada/Pods-Puntada-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Puntada/Pods-Puntada-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -406,9 +431,10 @@
 				CE65EABA255525210008B4D5 /* SideMenuVC.swift in Sources */,
 				BB753E662537D66600B097EF /* AppDelegate.swift in Sources */,
 				CE8892A6255651EF0001A739 /* Constants.swift in Sources */,
+				CE59B5D7255E2B6C00B62B66 /* ComoFuncionaVC.swift in Sources */,
 				CE8C50F3254BD4BD00F303E7 /* MenuVC.swift in Sources */,
 				CE8C51192550D02400F303E7 /* tcUser.swift in Sources */,
-				CE8377EA2555059400954D96 /* ParametroVC.swift in Sources */,
+				CE59B5D2255E29A100B62B66 /* ParametroVC.swift in Sources */,
 				CE8C50FF254BD5D000F303E7 /* tcMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

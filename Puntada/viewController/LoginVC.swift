@@ -10,7 +10,32 @@ import UIKit
 import CryptoSwift
 import SwiftyJSON 
 import FBSDKLoginKit
-class LoginVC: UIViewController,LoginButtonDelegate  {
+import GoogleSignIn
+class LoginVC: UIViewController,LoginButtonDelegate,GIDSignInDelegate  {
+    @IBOutlet weak var btnGoogleLogin: GIDSignInButton!
+    @IBAction func btnGoogleLoginAction(_ sender: Any) {
+        GIDSignIn.sharedInstance()?.signIn()
+    }
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!,
+              withError error: Error!) {
+      if let error = error {
+        if (error as NSError).code == GIDSignInErrorCode.hasNoAuthInKeychain.rawValue {
+          print("The user has not signed in before or they have since signed out.")
+        } else {
+          print("\(error.localizedDescription)")
+        }
+        return
+      }
+      // Perform any operations on signed in user here.
+      let userId = user.userID                  // For client-side use only!
+      let idToken = user.authentication.idToken // Safe to send to the server
+      let fullName = user.profile.name
+      let givenName = user.profile.givenName
+      let familyName = user.profile.familyName
+      let email = user.profile.email
+      // ...
+    }
+
     func loginButton(_ loginButton: FBLoginButton, didCompleteWith result: LoginManagerLoginResult?, error: Error?) {
         if error != nil {
             print("error")
@@ -21,6 +46,7 @@ class LoginVC: UIViewController,LoginButtonDelegate  {
             print("user_id: \(String(describing: result?.token?.userID))")
             
         }
+        
         if((AccessToken.current) != nil)
         {
             GraphRequest(graphPath: "me", parameters: ["fields": "id, name, first_name, last_name, picture.type(large), email"]).start(completionHandler:
@@ -56,11 +82,11 @@ class LoginVC: UIViewController,LoginButtonDelegate  {
         }
     }
         func doLogin(response:JSON ){
-            Utils.setData(data: response["result"]["user_data"]["usu_nombre"].string, key: "usu_nombre")
-            Utils.setData(data: response["result"]["user_data"]["usu_apellido"].string, key: "usu_apellido")
-            Utils.setData(data: response["result"]["user_data"]["usu_imagen"].string, key: "usu_imagen")
-            Utils.setData(data: response["result"]["user_data"]["usu_correo"].string, key: "usu_correo")
-            Utils.setData(data: response["result"]["access_token"].string, key: "access_token")
+            Utils.setData(data: response["result"]["user_data"]["usu_nombre"].string ?? "", key: "usu_nombre")
+            Utils.setData(data: response["result"]["user_data"]["usu_apellido"].string ?? "", key: "usu_apellido")
+            Utils.setData(data: response["result"]["user_data"]["usu_imagen"].string ?? "", key: "usu_imagen")
+            Utils.setData(data: response["result"]["user_data"]["usu_correo"].string ?? ""  , key: "usu_correo")
+            Utils.setData(data: response["result"]["access_token"].string ?? "" , key: "access_token")
             self.performSegue(withIdentifier: "home", sender: nil)
             
              
@@ -96,8 +122,19 @@ class LoginVC: UIViewController,LoginButtonDelegate  {
         fbButtonContainer.addSubview(loginButton) 
         loginButton.permissions = ["public_profile", "email"]
         loginButton.delegate  = self;
-        
-        // Do any additional setup after loading the view.
+        GIDSignIn.sharedInstance()?.presentingViewController = self
+
+          // Automatically sign in the user.
+          GIDSignIn.sharedInstance()?.restorePreviousSignIn()
+    }
+    func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!,
+      withError error: NSError!) {
+        if (error == nil) {
+          // Perform any operations on signed in user here.
+          // ...
+        } else {
+          print("\(error.localizedDescription)")
+        }
     }
     
  
