@@ -16,6 +16,10 @@ ${BUILT_PRODUCTS_DIR}/KVNProgress/KVNProgress.framework
 ${BUILT_PRODUCTS_DIR}/Material/Material.framework
 ${BUILT_PRODUCTS_DIR}/MaterialTextField/MaterialTextField.framework
 ${BUILT_PRODUCTS_DIR}/Motion/Motion.framework
+${BUILT_PRODUCTS_DIR}/PaddingLabel/PaddingLabel.framework
+${BUILT_PRODUCTS_DIR}/Pages/Pages.framework
+${BUILT_PRODUCTS_DIR}/Presentation/Presentation.framework
+${BUILT_PRODUCTS_DIR}/ProgressBarKit/ProgressBarKit.framework
 ${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework
 ${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework
 ${BUILT_PRODUCTS_DIR}/UICheckbox/UICheckbox.framework

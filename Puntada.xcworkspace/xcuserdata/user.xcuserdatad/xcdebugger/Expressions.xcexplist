@@ -3,15 +3,36 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "static Utils.getData(key:):Utils.swift">
+         contextName = "LoginVC.doLogin(response:):LoginVC.swift">
          <PersistentStrings>
             <PersistentString
-               value = "defaults.value(forKey: key) !as String">
+               value = "response[&quot;result&quot;][&quot;user_data&quot;][&quot;usu_nombre&quot;].string">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "main:AppDelegate.swift">
+         contextName = "closure #1 in LoginVC.loginButton(_:didCompleteWith:error:):LoginVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "result">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in RemoteRequest.jsonByRequestPost(requestUrl:parameters:completeHandler:errorHandler:loadingMessage:view:showDialogs:):RemoteRequest.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "json[&quot;result&quot;][&quot;success&quot;] ">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "HomeViewController.viewDidLoad():HomeViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = " Double(pts/300)">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "closure #1 in static RemoteRequest.jsonByRequestPost(requestUrl:parameters:completeHandler:errorHandler:loadingMessage:view:showDialogs:):RemoteRequest.swift">
@@ -25,10 +46,32 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "closure #1 in LoginVC.loginButton(_:didCompleteWith:error:):LoginVC.swift">
+         contextName = "ProgressBar.createMasks():ProgressBar.swift">
          <PersistentStrings>
             <PersistentString
-               value = "result">
+               value = "trackConfigurations.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in closure #1 in LoginVC.loginButton(_:didCompleteWith:error:):LoginVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "response?[&quot;result&quot;][&quot;user_data&quot;] ">
+            </PersistentString>
+            <PersistentString
+               value = "response?[&quot;result&quot;][&quot;success&quot;].bool">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "main:AppDelegate.swift">
+      </ContextState>
+      <ContextState
+         contextName = "AppDelegate.sign(_:didSignInFor:withError:):AppDelegate.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "user.profile.givenName">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -44,30 +87,6 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "LoginVC.doLogin(response:):LoginVC.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "response[&quot;result&quot;][&quot;user_data&quot;][&quot;usu_nombre&quot;].string">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "closure #1 in RemoteRequest.jsonByRequestPost(requestUrl:parameters:completeHandler:errorHandler:loadingMessage:view:showDialogs:):RemoteRequest.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "json[&quot;result&quot;][&quot;success&quot;] ">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "closure #1 in closure #1 in LoginVC.loginButton(_:didCompleteWith:error:):LoginVC.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "response?[&quot;result&quot;][&quot;user_data&quot;] ">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
          contextName = "LoginVC.loginButton(_:didCompleteWith:error:):LoginVC.swift">
          <PersistentStrings>
             <PersistentString
@@ -76,18 +95,18 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "AppDelegate.sign(_:didSignInFor:withError:):AppDelegate.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "user.profile.givenName">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
          contextName = "menuVC.tableView(_:cellForRowAt:):MenuVC.swift">
          <PersistentStrings>
             <PersistentString
                value = "Utils.getData(key: &quot;usu_nombre&quot;) !as string">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static Utils.getData(key:):Utils.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "defaults.value(forKey: key) !as String">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

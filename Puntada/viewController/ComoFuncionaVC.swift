@@ -7,15 +7,22 @@
 //
 
 import UIKit
-
+import Presentation
 class ComoFuncionaVC: UIViewController {
+    
 
+    
     @IBAction func backButtonAction(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        let viewController1 = UIViewController()
+        viewController1.title = "¿Cómo funciona Puntada App?"
 
+        let viewController2 = UIViewController()
+        viewController2.title = "1. Acumula"
+        let presentationController = PresentationController(pages: [viewController1, viewController2])
         // Do any additional setup after loading the view.
     }
     

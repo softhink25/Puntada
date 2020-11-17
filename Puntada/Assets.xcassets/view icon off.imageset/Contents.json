@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "view icon off.svg",
+      "filename" : "view icon off.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "view icon off@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "view icon off@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

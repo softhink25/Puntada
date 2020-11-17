@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Tarjeta.svg",
+      "filename" : "Tarjeta.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "Tarjeta@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "Tarjeta@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

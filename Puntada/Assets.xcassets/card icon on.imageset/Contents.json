@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "card icon on.svg",
+      "filename" : "card icon on.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "card icon on@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "card icon on@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

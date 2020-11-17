@@ -86,6 +86,9 @@ class LoginVC: UIViewController,LoginButtonDelegate,GIDSignInDelegate  {
             Utils.setData(data: response["result"]["user_data"]["usu_apellido"].string ?? "", key: "usu_apellido")
             Utils.setData(data: response["result"]["user_data"]["usu_imagen"].string ?? "", key: "usu_imagen")
             Utils.setData(data: response["result"]["user_data"]["usu_correo"].string ?? ""  , key: "usu_correo")
+            Utils.setData(data: response["result"]["user_data"]["usu_mes_nacimiento"].string ?? ""  , key: "usu_mes_telefono")
+            Utils.setData(data: response["result"]["user_data"]["usu_dia_nacimiento"].string ?? ""  , key: "usu_dia_telefono")
+            Utils.setData(data: response["result"]["user_data"]["usu_mes_telefono"].string ?? ""  , key: "usu_mes_nacimiento")
             Utils.setData(data: response["result"]["access_token"].string ?? "" , key: "access_token")
             self.performSegue(withIdentifier: "home", sender: nil)
             
@@ -123,9 +126,13 @@ class LoginVC: UIViewController,LoginButtonDelegate,GIDSignInDelegate  {
         loginButton.permissions = ["public_profile", "email"]
         loginButton.delegate  = self;
         GIDSignIn.sharedInstance()?.presentingViewController = self
-
+       
           // Automatically sign in the user.
           GIDSignIn.sharedInstance()?.restorePreviousSignIn()
+        let token:String = Utils.getData(key: "access_token") as? String ?? ""
+        if(token != nil && token != ""){
+            self.performSegue(withIdentifier: "home", sender: nil)
+        }
     }
     func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!,
       withError error: NSError!) {
@@ -140,10 +147,7 @@ class LoginVC: UIViewController,LoginButtonDelegate,GIDSignInDelegate  {
  
      
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "home"{
-
-                let destView = segue.destination as! HomeViewController
-        }
+         
     }
 
 }

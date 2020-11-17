@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Error icon.svg",
+      "filename" : "Error icon.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "Error icon@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "Error icon@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

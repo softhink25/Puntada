@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "OK icon.svg",
+      "filename" : "OK icon.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "OK icon@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "OK icon@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

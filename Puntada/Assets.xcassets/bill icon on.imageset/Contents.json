@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "bill icon on.svg",
+      "filename" : "bill icon on.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "bill icon on@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "bill icon on@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

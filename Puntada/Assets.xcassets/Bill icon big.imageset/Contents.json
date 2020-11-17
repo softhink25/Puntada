@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Bill icon big.svg",
+      "filename" : "Bill icon big.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "Bill icon big@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "Bill icon big@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

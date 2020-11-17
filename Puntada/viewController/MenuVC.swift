@@ -17,7 +17,7 @@ import UIKit
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
-    var menuItems: [menuItem] = [menuItem(etiqueta: "", segue: ""),menuItem(etiqueta: "Editar Perfil", segue: "editarPerfilSegue"),menuItem(etiqueta: "Cómo Funciona", segue: "comoFuncionaSegue"),menuItem(etiqueta: "Servicio al Cliente", segue: "servicioSegue"),menuItem(etiqueta: "Aviso de Privacidad", segue: "AvisoSegue"),menuItem(etiqueta: "Términos y condiciones", segue: "Terminos y Condiciones")]
+    var menuItems: [menuItem] = [menuItem(etiqueta: "", segue: ""),menuItem(etiqueta: "Editar Perfil", segue: "editarPerfilSegue"),menuItem(etiqueta: "Cómo Funciona", segue: "comoFuncionaSegue"),menuItem(etiqueta: "Servicio al Cliente", segue: "servicioSegue"),menuItem(etiqueta: "Aviso de Privacidad", segue: "avisoSegue"),menuItem(etiqueta: "Términos y condiciones", segue: "terminosSegue")]
     override func viewDidLoad() {
         super.viewDidLoad()
 //        self.tblMenu.register(tcUser.self, forCellReuseIdentifier: "tcUser")
@@ -128,15 +128,15 @@ import UIKit
         return true
     }
     */
-
-    /*
+ 
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if(segue.identifier == "terminosSegue"){
+            let destView = segue.destination as! ParametroVC
+            destView.tipo = 1
+        }
     }
-    */
 
 }

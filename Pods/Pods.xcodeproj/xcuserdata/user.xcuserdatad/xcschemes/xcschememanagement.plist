@@ -104,7 +104,27 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>PaddingLabel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pages.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Puntada.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Presentation.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ProgressBarKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

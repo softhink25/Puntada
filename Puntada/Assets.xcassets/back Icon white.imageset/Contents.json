@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "back Icon white.svg",
+      "filename" : "back Icon white.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "back Icon white@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "back Icon white@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "pin icon.svg",
+      "filename" : "pin icon.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "pin icon@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "pin icon@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
