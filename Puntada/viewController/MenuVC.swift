@@ -60,16 +60,17 @@ import UIKit
 //            cell.btnMenuAccion.title( "");
         }else{
             let cell:tcUser = tableView.dequeueReusableCell(withIdentifier: tipo, for: indexPath) as! tcUser
-            cell.lblPuntos?.text = "145"
+            cell.lblPuntos?.text = Utils.getDataAsString(key: "total_card_points")
             let nombre:String = Utils.getData(key: "usu_nombre") as! String;
             cell.lblUsuario?.text =  nombre
-            let imgUsuario = Data(base64Encoded: Utils.getData(key: "usu_imagen") as! String)
+            
             
             cell.imgUsuario.layer.borderWidth = 1
             cell.imgUsuario.layer.masksToBounds = false
             cell.imgUsuario.layer.borderColor = UIColor.black.cgColor
             cell.imgUsuario.layer.cornerRadius = cell.imgUsuario.frame.height/2
             cell.imgUsuario.clipsToBounds = true
+            let imgUsuario = Data(base64Encoded: Utils.getData(key: "usu_imagen") as! String)
             if let imgUsuario = imgUsuario {
                 cell.imgUsuario.image = UIImage(data: imgUsuario )
             }
@@ -80,6 +81,24 @@ import UIKit
 //        return cell
     }
      func despachar(item:menuItem) {
+        if item.segue == "" {
+            return;
+        }
+        if(item.segue=="servicioSegue"){
+            let phoneNumber =  "+525512345678" // you need to change this number
+            let appURL = URL(string: "https://api.whatsapp.com/send?phone=\(phoneNumber)")!
+            if UIApplication.shared.canOpenURL(appURL) {
+                if #available(iOS 10.0, *) {
+                    UIApplication.shared.open(appURL, options: [:], completionHandler: nil)
+                }
+                else {
+                    UIApplication.shared.openURL(appURL)
+                }
+            } else {
+                // WhatsApp is not installed
+            }
+            return
+        }
         self.performSegue(withIdentifier: item.segue, sender: self)
     }
     @objc func despachar() {

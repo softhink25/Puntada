@@ -15,8 +15,7 @@ import GoogleSignIn
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     var window: UIWindow?
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
-        print(user)
-        if(error != nil){
+          if(error != nil){
             return;
         }
         let name:String = user.profile.givenName;
@@ -26,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         let url:URL = URL(string: Constants.FB_LOGIN)! ;
         let viewController = self.window?.rootViewController as! LoginVC
         let parameters = [ "first_name": name, "last_name":lastName,"email":email,"id":userId ] as [String : Any];
-        print(email)
+        
         RemoteRequest.jsonByRequestPost(requestUrl: url, parameters: parameters as [String : Any], completeHandler: { [self] (response) in
             if(response?["result"]["success"].bool ?? false){
                 viewController.doLogin(response: response!);
@@ -42,6 +41,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         IQKeyboardManager.shared.enable = true
         GIDSignIn.sharedInstance().clientID = "615023104833-i9b0tvf04gangnbqdj80s8tg9ecjcha9.apps.googleusercontent.com"
         GIDSignIn.sharedInstance().delegate = self  // If AppDelegate conforms to GIDSignInDelegate
+//        let token:String = Utils.getData(key: "access_token") as? String ?? ""
+//        if(token != ""){
+//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//            let initialViewController = storyboard.instantiateViewController(withIdentifier: "HomeVC")
+//            initialViewController.modalPresentationStyle = .fullScreen
+//            self.window?.rootViewController = initialViewController
+//            self.window?.makeKeyAndVisible()
+//            
+//        }
         return true
     };
     func application( _ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:] ) -> Bool { ApplicationDelegate.shared.application( app, open: url, sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String, annotation: options[UIApplication.OpenURLOptionsKey.annotation] )

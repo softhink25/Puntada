@@ -87,48 +87,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "8085B6A7-D7F7-4FF8-8182-BDBE847DBE70"
+            uuid = "F7B5934B-4E36-4F2E-B82A-A5BB55F723B9"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Puntada/clases/Utils.swift"
+            filePath = "Puntada/viewController/ComoFuncionaVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
-            landmarkName = "setData(data:key:)"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "mostrar()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "65889440-7CEB-447F-B87F-533A5DA8B5F3"
+            uuid = "551DB633-C513-4807-9A9D-D2C4FFF85BBE"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Puntada/viewController/HomeViewController.swift"
+            filePath = "Puntada/clases/RemoteRequest.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "148"
-            endingLineNumber = "148"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "AFD566EB-9DC1-4921-8C73-B60EC5C2CC98"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Puntada/AppDelegate.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "sign(_:didSignInFor:withError:)"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
+            landmarkName = "jsonByRequestSecurePost(requestUrl:parameters:completeHandler:errorHandler:loadingMessage:view:showDialogs:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

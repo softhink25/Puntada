@@ -1,6 +1,7 @@
 ${PODS_ROOT}/Target Support Files/Pods-Puntada/Pods-Puntada-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
 ${BUILT_PRODUCTS_DIR}/Alamofire-SwiftyJSON/Alamofire_SwiftyJSON.framework
+${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework
 ${BUILT_PRODUCTS_DIR}/AppAuth/AppAuth.framework
 ${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework
 ${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework
@@ -12,14 +13,13 @@ ${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework
 ${BUILT_PRODUCTS_DIR}/GTMAppAuth/GTMAppAuth.framework
 ${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework
 ${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework
+${BUILT_PRODUCTS_DIR}/JMMaskTextField-Swift/JMMaskTextField_Swift.framework
 ${BUILT_PRODUCTS_DIR}/KVNProgress/KVNProgress.framework
 ${BUILT_PRODUCTS_DIR}/Material/Material.framework
 ${BUILT_PRODUCTS_DIR}/MaterialTextField/MaterialTextField.framework
 ${BUILT_PRODUCTS_DIR}/Motion/Motion.framework
-${BUILT_PRODUCTS_DIR}/PaddingLabel/PaddingLabel.framework
 ${BUILT_PRODUCTS_DIR}/Pages/Pages.framework
 ${BUILT_PRODUCTS_DIR}/Presentation/Presentation.framework
 ${BUILT_PRODUCTS_DIR}/ProgressBarKit/ProgressBarKit.framework
 ${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework
 ${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework
-${BUILT_PRODUCTS_DIR}/UICheckbox/UICheckbox.framework

@@ -3,6 +3,8 @@ PODS:
   - Alamofire-SwiftyJSON (3.0.0):
     - Alamofire (~> 4.5)
     - SwiftyJSON (~> 4.0.0)
+  - AlamofireImage (3.6.0):
+    - Alamofire (~> 4.9)
   - AppAuth (1.4.0):
     - AppAuth/Core (= 1.4.0)
     - AppAuth/ExternalUserAgent (= 1.4.0)
@@ -46,6 +48,7 @@ PODS:
   - GTMSessionFetcher/Full (1.5.0):
     - GTMSessionFetcher/Core (= 1.5.0)
   - IQKeyboardManagerSwift (6.5.6)
+  - JMMaskTextField-Swift (0.1.3)
   - KVNProgress (2.3.5)
   - Material (3.1.8):
     - Material/Core (= 3.1.8)
@@ -55,18 +58,17 @@ PODS:
   - Motion (3.1.3):
     - Motion/Core (= 3.1.3)
   - Motion/Core (3.1.3)
-  - PaddingLabel (1.2)
   - Pages (2.0.2)
   - Presentation (4.1.2):
     - Pages (~> 2.0)
   - ProgressBarKit (1.2.1)
   - SideMenu (6.5.0)
   - SwiftyJSON (4.0.0)
-  - UICheckbox (0.0.2)
 
 DEPENDENCIES:
   - Alamofire
   - Alamofire-SwiftyJSON
+  - AlamofireImage
   - CryptoSwift
   - FacebookCore
   - FacebookLogin
@@ -74,20 +76,20 @@ DEPENDENCIES:
   - FBSDKLoginKit
   - GoogleSignIn
   - IQKeyboardManagerSwift
+  - JMMaskTextField-Swift (~> 0.1)
   - KVNProgress
   - Material
   - MaterialTextField
-  - PaddingLabel
   - Presentation
   - ProgressBarKit
   - SideMenu (~> 6.0)
   - SwiftyJSON
-  - UICheckbox
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - Alamofire-SwiftyJSON
+    - AlamofireImage
     - AppAuth
     - CryptoSwift
     - FacebookCore
@@ -100,21 +102,21 @@ SPEC REPOS:
     - GTMAppAuth
     - GTMSessionFetcher
     - IQKeyboardManagerSwift
+    - JMMaskTextField-Swift
     - KVNProgress
     - Material
     - MaterialTextField
     - Motion
-    - PaddingLabel
     - Pages
     - Presentation
     - ProgressBarKit
     - SideMenu
     - SwiftyJSON
-    - UICheckbox
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   Alamofire-SwiftyJSON: 2b3649d57dc7bb2880fb8b86f8bb969397666916
+  AlamofireImage: be9963c6582d68b39e89191f64c82a7d7bf40fdd
   AppAuth: 31bcec809a638d7bd2f86ea8a52bd45f6e81e7c7
   CryptoSwift: fedfc9f8362163ca381a78897ad810982e18d464
   FacebookCore: ba86524b66cfa86d0f8e65d08faa8504a9f732dd
@@ -127,18 +129,17 @@ SPEC CHECKSUMS:
   GTMAppAuth: 197a8dabfea5d665224aa00d17f164fc2248dab9
   GTMSessionFetcher: b3503b20a988c4e20cc189aa798fd18220133f52
   IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+  JMMaskTextField-Swift: 16aa552605b121285e6c2f0817ab31cea5f4704b
   KVNProgress: d7046cce142f1aeb740db39dc3cacfe910fac354
   Material: a2a3f400a3b549d53ef89e56c58c4535b29db387
   MaterialTextField: f1a0786588e4d3610cb9bb62d2adbe9777cebbf9
   Motion: cf1e060e489f6661126374d5c60dbd2ed991605c
-  PaddingLabel: 21ab5282c780366018b04c30e3920c2f55a2fd14
   Pages: 5564ac6035c48fef7a837049314f57507d263b11
   Presentation: 84974970fa451c89147d2bed4d5d50f857e71761
   ProgressBarKit: d4b2ee2de03716b085eee295e5fd12a26ee7111f
   SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
-  UICheckbox: 54af9bc308c8c2b18404f4c360172115c0daea36
 
-PODFILE CHECKSUM: 83d6f87c3d6189b8a7d6c518e3f86881f74a5ce9
+PODFILE CHECKSUM: 2dc123459fe0c05169a0c2fabcf9813451ed1127
 
 COCOAPODS: 1.9.3

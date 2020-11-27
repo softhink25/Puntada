@@ -8,8 +8,7 @@ target 'Puntada' do
 pod 'CryptoSwift'
 pod 'Alamofire'
 pod 'Material'
-pod 'MaterialTextField'
-pod 'UICheckbox'
+pod 'MaterialTextField' 
 pod 'SwiftyJSON'
 pod 'KVNProgress'
 # For Swift 5 use:
@@ -22,6 +21,10 @@ pod 'FacebookShare'
 pod 'FBSDKLoginKit'
 pod 'GoogleSignIn'
 pod 'Presentation'
-pod 'PaddingLabel'
+#pod 'PaddingLabel'
 pod 'ProgressBarKit'
+#pod 'AKMaskField'
+pod 'JMMaskTextField-Swift', '~> 0.1'
+pod 'AlamofireImage'
+ 
 end 

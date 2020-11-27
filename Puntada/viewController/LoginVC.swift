@@ -11,8 +11,12 @@ import CryptoSwift
 import SwiftyJSON 
 import FBSDKLoginKit
 import GoogleSignIn
+
 class LoginVC: UIViewController,LoginButtonDelegate,GIDSignInDelegate  {
     @IBOutlet weak var btnGoogleLogin: GIDSignInButton!
+    @IBOutlet weak var btnEntrar: UIButton!
+    @IBOutlet weak var btnGoogleContainer: UIView!
+    
     @IBAction func btnGoogleLoginAction(_ sender: Any) {
         GIDSignIn.sharedInstance()?.signIn()
     }
@@ -25,14 +29,7 @@ class LoginVC: UIViewController,LoginButtonDelegate,GIDSignInDelegate  {
           print("\(error.localizedDescription)")
         }
         return
-      }
-      // Perform any operations on signed in user here.
-      let userId = user.userID                  // For client-side use only!
-      let idToken = user.authentication.idToken // Safe to send to the server
-      let fullName = user.profile.name
-      let givenName = user.profile.givenName
-      let familyName = user.profile.familyName
-      let email = user.profile.email
+      } 
       // ...
     }
 
@@ -63,7 +60,7 @@ class LoginVC: UIViewController,LoginButtonDelegate,GIDSignInDelegate  {
                             let url:URL = URL(string: Constants.FB_LOGIN)! ;
                             if let email = data.object(forKey: "email") as? String
                             {
-                                let parameters = [ "first_name": firstName, "last_name":lastName,"email":email,"id":userId ] as [String : Any];
+                                let parameters = [ "first_name": firstName, "last_name":lastName,"email":email,"id":userId as Any ] as [String : Any];
                                 print(email)
                                 RemoteRequest.jsonByRequestPost(requestUrl: url, parameters: parameters as [String : Any], completeHandler: { [self] (response) in
                                     if(response?["result"]["success"].bool ?? false){
@@ -82,16 +79,8 @@ class LoginVC: UIViewController,LoginButtonDelegate,GIDSignInDelegate  {
         }
     }
         func doLogin(response:JSON ){
-            Utils.setData(data: response["result"]["user_data"]["usu_nombre"].string ?? "", key: "usu_nombre")
-            Utils.setData(data: response["result"]["user_data"]["usu_apellido"].string ?? "", key: "usu_apellido")
-            Utils.setData(data: response["result"]["user_data"]["usu_imagen"].string ?? "", key: "usu_imagen")
-            Utils.setData(data: response["result"]["user_data"]["usu_correo"].string ?? ""  , key: "usu_correo")
-            Utils.setData(data: response["result"]["user_data"]["usu_mes_nacimiento"].string ?? ""  , key: "usu_mes_telefono")
-            Utils.setData(data: response["result"]["user_data"]["usu_dia_nacimiento"].string ?? ""  , key: "usu_dia_telefono")
-            Utils.setData(data: response["result"]["user_data"]["usu_mes_telefono"].string ?? ""  , key: "usu_mes_nacimiento")
-            Utils.setData(data: response["result"]["access_token"].string ?? "" , key: "access_token")
+            Utils.doLogin(response:response)
             self.performSegue(withIdentifier: "home", sender: nil)
-            
              
         }
     func loginButtonDidLogOut(_ loginButton: FBLoginButton) {
@@ -120,8 +109,10 @@ class LoginVC: UIViewController,LoginButtonDelegate,GIDSignInDelegate  {
    
     override func viewDidLoad() {
         super.viewDidLoad()
+         
         let loginButton = FBLoginButton()
         loginButton.center = fbButtonContainer.center;
+        loginButton.layer.bounds = fbButtonContainer.layer.bounds;
         fbButtonContainer.addSubview(loginButton) 
         loginButton.permissions = ["public_profile", "email"]
         loginButton.delegate  = self;
@@ -129,10 +120,9 @@ class LoginVC: UIViewController,LoginButtonDelegate,GIDSignInDelegate  {
        
           // Automatically sign in the user.
           GIDSignIn.sharedInstance()?.restorePreviousSignIn()
-        let token:String = Utils.getData(key: "access_token") as? String ?? ""
-        if(token != nil && token != ""){
-            self.performSegue(withIdentifier: "home", sender: nil)
-        }
+        Utils.shadowButton(boton: btnEntrar)
+        Utils.shadowView(view: btnGoogleContainer);
+        Utils.shadowView(view:  fbButtonContainer);
     }
     func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!,
       withError error: NSError!) {
@@ -143,11 +133,19 @@ class LoginVC: UIViewController,LoginButtonDelegate,GIDSignInDelegate  {
           print("\(error.localizedDescription)")
         }
     }
-    
+    override func viewDidAppear(_ animated: Bool) {
+        let token:String = Utils.getData(key: "access_token") as? String ?? ""
+        if(token != nil && token != ""){
+            self.performSegue(withIdentifier: "home", sender: nil)
+        }
+    }
  
      
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-         
+        if segue.identifier == "home"{
+
+                let destView = segue.destination as! HomeViewController
+        }
     }
 
 }

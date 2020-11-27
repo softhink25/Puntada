@@ -8,13 +8,15 @@
 
 import UIKit
 import WebKit
-import UICheckbox
+import KVNProgress
 class ParametroVC: UIViewController {
 
     @IBOutlet weak var lbltitulo: UILabel!
     @IBOutlet weak var webView: WKWebView!
     @IBOutlet weak var swAcepto: UISwitch!
     @IBOutlet weak var stackCheckbox: UIStackView!
+    @IBOutlet weak var btnAceptar: UIButton!
+    
     var tipo:Int = 0;
     @IBOutlet weak var dismiss: UIButton!
     @IBAction func dismissAction(_ sender: Any) {
@@ -28,13 +30,20 @@ class ParametroVC: UIViewController {
 //                            webView.loadHTMLString((response?["result"]["par_valores"].string!)!, baseURL: url)
 //                        }
 //                        }, errorHandler: nil, loadingMessage: "Guardando..", view: self.view, showDialogs: true)
+                Utils.setData(data: true, key: "condicionesAceptadas")
+                self.dismiss(animated: true, completion: nil)
+                
+            }else{
+                KVNProgress.showError(withStatus: "Para Continuar debes aceptar los términos y condiciones")
             }
-            self.dismiss(animated: true, completion: nil)
+            
         }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        Utils.shadowButton(boton: btnAceptar)
         var parameters:[String:Any];
+        swAcepto.isOn = Utils.getData(key: "condicionesAceptadas") as? Bool ?? false ;
         if(tipo == 0){
             lbltitulo.text = "Aviso de Privacidad"
             stackCheckbox.isHidden=true;
