@@ -20,6 +20,7 @@
 		CE59B597255CE3F800B62B66 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE59B596255CE3F800B62B66 /* GoogleService-Info.plist */; };
 		CE59B5D2255E29A100B62B66 /* ParametroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE59B5D1255E29A100B62B66 /* ParametroVC.swift */; };
 		CE59B5D7255E2B6C00B62B66 /* ComoFuncionaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE59B5D6255E2B6C00B62B66 /* ComoFuncionaVC.swift */; };
+		CE5E526C2571D6F200CED42D /* DetallePromocionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5E526B2571D6F200CED42D /* DetallePromocionVC.swift */; };
 		CE65EAB525551CCB0008B4D5 /* RegistroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE65EAB425551CCB0008B4D5 /* RegistroVC.swift */; };
 		CE65EABA255525210008B4D5 /* SideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE65EAB9255525210008B4D5 /* SideMenuVC.swift */; };
 		CE68715E256CB96D00155630 /* promocionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68715D256CB96D00155630 /* promocionCell.swift */; };
@@ -79,6 +80,7 @@
 		CE59B596255CE3F800B62B66 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CE59B5D1255E29A100B62B66 /* ParametroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametroVC.swift; sourceTree = "<group>"; };
 		CE59B5D6255E2B6C00B62B66 /* ComoFuncionaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComoFuncionaVC.swift; sourceTree = "<group>"; };
+		CE5E526B2571D6F200CED42D /* DetallePromocionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallePromocionVC.swift; sourceTree = "<group>"; };
 		CE65EAB425551CCB0008B4D5 /* RegistroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroVC.swift; sourceTree = "<group>"; };
 		CE65EAB9255525210008B4D5 /* SideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuVC.swift; sourceTree = "<group>"; };
 		CE68715D256CB96D00155630 /* promocionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = promocionCell.swift; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 				CE59B5D6255E2B6C00B62B66 /* ComoFuncionaVC.swift */,
 				CE70974625650669001A1014 /* PerfilVC.swift */,
 				CEC68EAB25651FA400ED1BBB /* AyudaVC.swift */,
+				CE5E526B2571D6F200CED42D /* DetallePromocionVC.swift */,
 			);
 			path = viewController;
 			sourceTree = "<group>";
@@ -474,6 +477,7 @@
 				CE8C50F3254BD4BD00F303E7 /* MenuVC.swift in Sources */,
 				CEC68EAC25651FA400ED1BBB /* AyudaVC.swift in Sources */,
 				CE8C51192550D02400F303E7 /* tcUser.swift in Sources */,
+				CE5E526C2571D6F200CED42D /* DetallePromocionVC.swift in Sources */,
 				CE59B5D2255E29A100B62B66 /* ParametroVC.swift in Sources */,
 				CE8C50FF254BD5D000F303E7 /* tcMenu.swift in Sources */,
 			);
