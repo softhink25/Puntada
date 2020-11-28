@@ -21,8 +21,9 @@ class HomeViewController: UIViewController,UICollectionViewDelegate,UICollection
     @IBOutlet weak var viewDatosTarjeta: UIView!
     @IBOutlet weak var constraintPromocionAlto: NSLayoutConstraint!
     @IBOutlet weak var stackPromociones: UIView!
+    @IBOutlet weak var usuarioImgView: UIView!
     
-    @IBOutlet weak var stackTarjeta: UIView!
+    @IBOutlet weak var viewTarjetaVirtual: UIView!
     @IBOutlet weak var lblUsuario: UILabel!
     @IBOutlet weak var vistaMedia: UIView! 
     @IBOutlet weak var viewProgessContainer: UIView!
@@ -34,6 +35,7 @@ class HomeViewController: UIViewController,UICollectionViewDelegate,UICollection
     @IBOutlet weak var topHeight: NSLayoutConstraint!
     @IBOutlet weak var stackHistorial: UIView!
     @IBOutlet weak var promocionesCV: UICollectionView!
+    @IBOutlet weak var tarjetaDatosView: UIView!
     
     @IBOutlet weak var lblHistorial: UILabel!
     @IBOutlet weak var lblNumeroTarjeta: UILabel!
@@ -64,8 +66,8 @@ class HomeViewController: UIViewController,UICollectionViewDelegate,UICollection
         cell.layer.shadowOpacity = 0.7
                 cell.layer.masksToBounds = false
 //        cell.view
-        cell.constraintPromocionAlto.constant = self.promocionesCV.frame.height*0.33
-        cell.viewContainer.frame.size.height = self.promocionesCV.frame.height*0.9;
+        cell.constraintPromocionAlto.constant = self.promocionesCV.frame.height*0.4
+        cell.viewContainer.frame.size.height = self.promocionesCV.frame.height*0.99;
         return cell
     }
     
@@ -87,8 +89,9 @@ class HomeViewController: UIViewController,UICollectionViewDelegate,UICollection
         btnTarjeta.setImage(UIImage(named: "card icon off"), for: .normal)
         btnHistorial.setImage(UIImage(named: "clock icon off"), for: .normal)
         viewContenedorUsuario.isHidden=true;
-//        viewTarjetaVirtual.isHidden = true;
+        viewTarjetaVirtual.isHidden = true;
         stackTarjetaQR.isHidden=true;
+        usuarioImgView.isHidden=true;
 //        topHeight.constant = 250
 //        lblHistorial.isHidden=true;
         stackHistorial.isHidden = true;
@@ -98,7 +101,8 @@ class HomeViewController: UIViewController,UICollectionViewDelegate,UICollection
         }
         if(activo=="perfil"){
             btnPerfil.setImage(UIImage(named: "User icon on"), for: .normal)
-            viewContenedorUsuario.isHidden = false 
+            viewContenedorUsuario.isHidden = false
+            usuarioImgView.isHidden=false;
         }
         if(activo=="tarjeta"){
             btnTarjeta.setImage(UIImage(named: "card icon on"), for: .normal)
@@ -167,7 +171,7 @@ class HomeViewController: UIViewController,UICollectionViewDelegate,UICollection
                 let tarjeta = Utils.getDataAsString(key: "dat_tarjeta") ?? ""
                
                 let maskedString = mask.mask(string: tarjeta) // returns "30310-360"
-//                self.lblNumeroTarjeta.text = maskedString
+                self.lblNumeroTarjeta.text = maskedString
                 let img = self.generateQRCode(from: tarjeta)
                 
 //                self.imgQR.image = img;
@@ -212,34 +216,38 @@ class HomeViewController: UIViewController,UICollectionViewDelegate,UICollection
 //            self.vistaMedia.layer.cornerRadius = 25;
         self.stackPromociones.layer.masksToBounds = false;
             self.stackPromociones.layer.cornerRadius = 25;
-//        self.viewDatosTarjeta.layer.masksToBounds = false;
-//        self.viewDatosTarjeta.layer.cornerRadius = 25;
+        self.tarjetaDatosView.layer.masksToBounds = false;
+            self.tarjetaDatosView.layer.cornerRadius = 25;
+        self.viewDatosTarjeta.layer.masksToBounds = false;
+        self.viewDatosTarjeta.layer.cornerRadius = 25;
+        
+        Utils.shadowView(view: self.viewDatosTarjeta)
         let trackConfig = PBTrackConfiguration(
             roundingCorners: [.allCorners],
             cornerRadii: CGSize(width: 8, height:5),
             edgeInsets: UIEdgeInsets(top:1, left: 1, bottom: 1, right: 1)
         )
         let bar = ProgressBar(trackColour: [.lightGray], barColour: [.blue], configurations: [.track: [trackConfig]])
-//        
-//        bar.setupProgressBar(in: viewProgessContainer)
-//        bar.setProgressBarValue(to: CGFloat(porcentaje))
-//        if(pts>0){
-//            bronceRedondo.backgroundColor = .blue;
-//        }
-//        if(pts>=100){
-//            plataRedondo.backgroundColor = .blue;
-//        }
-//        if(pts>=200){
-//            oroRedondo.backgroundColor = .blue;
-//        }
-//        if(pts>=300){
-//            diamanteRedondo.backgroundColor = .blue;
-//        }
-//        let tarjeta = Utils.getDataAsString(key: "dat_tarjeta") ?? ""
-//        lblNumeroTarjeta.text=tarjeta
-//        let img = generateQRCode(from: tarjeta)
-//
-//        imgQR.image = img;
+        
+        bar.setupProgressBar(in: viewProgessContainer)
+        bar.setProgressBarValue(to: CGFloat(porcentaje))
+        if(pts>0){
+            bronceRedondo.backgroundColor = .blue;
+        }
+        if(pts>=100){
+            plataRedondo.backgroundColor = .blue;
+        }
+        if(pts>=200){
+            oroRedondo.backgroundColor = .blue;
+        }
+        if(pts>=300){
+            diamanteRedondo.backgroundColor = .blue;
+        }
+        let tarjeta = Utils.getDataAsString(key: "dat_tarjeta") ?? ""
+        lblNumeroTarjeta.text=tarjeta
+        let img = generateQRCode(from: tarjeta)
+
+        imgQR.image = img;
         self.promocionesCV.delegate = self;
         self.promocionesCV.dataSource = self;
 //        self.constraintPromocionAlto.constant = self.promocionesCV.frame.height*0.3

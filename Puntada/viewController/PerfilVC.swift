@@ -8,7 +8,7 @@
 
 import UIKit
 import KVNProgress
-class PerfilVC: UIViewController,UIPickerViewDelegate, UIPickerViewDataSource  {
+class PerfilVC: UIViewController,UIPickerViewDelegate, UIPickerViewDataSource, UIImagePickerControllerDelegate & UINavigationControllerDelegate  {
     @IBOutlet weak var diaPickerView: UIPickerView!
     @IBOutlet weak var txtTelefono: UITextField!
     @IBOutlet weak var txtCorreo: UITextField!
@@ -24,7 +24,7 @@ class PerfilVC: UIViewController,UIPickerViewDelegate, UIPickerViewDataSource  {
     @IBOutlet weak var contrasenaView: UIStackView!
     @IBOutlet weak var segmentedTabControl: UISegmentedControl!
     @IBOutlet weak var btnAceptar: UIButton!
-    
+    let pickerController = UIImagePickerController()
     @IBAction func guardarContrasena(_ sender: Any) {
         if (txtContrasena.text!.isEmpty){
             KVNProgress.showError(withStatus: "La contraseña anterior no puede ser vacia", on: self.view)
@@ -145,6 +145,10 @@ class PerfilVC: UIViewController,UIPickerViewDelegate, UIPickerViewDataSource  {
         // Do any additional setup after loading the view.
         Utils.shadowButton(boton: btnAceptar);
         Utils.shadowButton(boton: btnCambiarContrasena)
+        pickerController.delegate = self
+        pickerController.allowsEditing = true
+        pickerController.mediaTypes = ["public.image"]
+         
     }
     
 
