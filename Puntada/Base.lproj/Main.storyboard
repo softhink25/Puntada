@@ -1320,7 +1320,7 @@ y encontrar increíbles promociones.</string>
                                                 <rect key="frame" x="0.0" y="80" width="368" height="30"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vb8-dU-KNL">
-                                                        <rect key="frame" x="0.0" y="0.0" width="154" height="30"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="159" height="30"/>
                                                         <fontDescription key="fontDescription" name="NeutraText-BookAlt" family="Neutra Text" pointSize="12"/>
                                                         <state key="normal" title="TÉRMINOS Y CONDICIONES">
                                                             <color key="titleColor" systemColor="labelColor"/>
@@ -1330,13 +1330,13 @@ y encontrar increíbles promociones.</string>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sn2-Dn-4ni">
-                                                        <rect key="frame" x="157" y="0.0" width="5" height="30"/>
+                                                        <rect key="frame" x="162" y="0.0" width="5" height="30"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yri-YM-AFi">
-                                                        <rect key="frame" x="165" y="0.0" width="203" height="30"/>
+                                                        <rect key="frame" x="170" y="0.0" width="198" height="30"/>
                                                         <fontDescription key="fontDescription" name="NeutraText-BookAlt" family="Neutra Text" pointSize="12"/>
                                                         <state key="normal" title="AVISO DE PRIVACIDAD">
                                                             <color key="titleColor" systemColor="labelColor"/>
@@ -2425,10 +2425,10 @@ y un número o signo.
                                                         <rect key="frame" x="30" y="60" width="368" height="150"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Krs-uG-gCr">
-                                                                <rect key="frame" x="5" y="0.0" width="231" height="102.33333333333333"/>
+                                                                <rect key="frame" x="5" y="0.0" width="231" height="116"/>
                                                                 <subviews>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="cLO-1m-DjN">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="231" height="69.333333333333329"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="231" height="77.666666666666671"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ept-Y6-yzT">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="231" height="20.333333333333332"/>
@@ -2444,13 +2444,13 @@ y un número o signo.
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Juan Pérez" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJg-O2-CZW">
-                                                                                <rect key="frame" x="0.0" y="29.333333333333343" width="231" height="29"/>
+                                                                                <rect key="frame" x="0.0" y="29.333333333333346" width="231" height="37.333333333333343"/>
                                                                                 <fontDescription key="fontDescription" name="NeutraText-Bold" family="Neutra Text" pointSize="32"/>
                                                                                 <color key="textColor" red="0.0015154884899999999" green="0.24073222280000001" blue="0.64968621729999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A96-GC-kqQ">
-                                                                                <rect key="frame" x="0.0" y="67.333333333333343" width="231" height="2"/>
+                                                                                <rect key="frame" x="0.0" y="75.666666666666657" width="231" height="2"/>
                                                                                 <color key="backgroundColor" red="0.39995324609999999" green="0.40002685789999998" blue="0.39994865660000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="2" id="3XP-nc-odx"/>
@@ -2459,10 +2459,10 @@ y un número o signo.
                                                                         </subviews>
                                                                     </stackView>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Msr-v0-a9H">
-                                                                        <rect key="frame" x="0.0" y="84.333333333333343" width="231" height="18"/>
+                                                                        <rect key="frame" x="0.0" y="92.666666666666657" width="231" height="23.333333333333329"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0Y-L8-FoY">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="40" height="18"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="40" height="23.333333333333332"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="width" constant="40" id="E6f-0N-8I4"/>
                                                                                 </constraints>
@@ -2471,7 +2471,7 @@ y un número o signo.
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2dB-rI-M0I">
-                                                                                <rect key="frame" x="41" y="0.0" width="190" height="18"/>
+                                                                                <rect key="frame" x="41" y="0.0" width="190" height="23.333333333333332"/>
                                                                                 <fontDescription key="fontDescription" name="NeutraText-Bold" family="Neutra Text" pointSize="20"/>
                                                                                 <color key="textColor" red="0.39995324609999999" green="0.40002685789999998" blue="0.39994865660000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                 <nil key="highlightedColor"/>
@@ -2479,7 +2479,7 @@ y un número o signo.
                                                                         </subviews>
                                                                     </stackView>
                                                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$10.50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YWi-Gz-1os" userLabel="lblImporte">
-                                                                        <rect key="frame" x="0.0" y="102.33333333333334" width="231" height="0.0"/>
+                                                                        <rect key="frame" x="0.0" y="116" width="231" height="0.0"/>
                                                                         <fontDescription key="fontDescription" name="NeutraText-BookAlt" family="Neutra Text" pointSize="17"/>
                                                                         <color key="textColor" red="0.0015154884899999999" green="0.24073222280000001" blue="0.64968621729999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <nil key="highlightedColor"/>
@@ -2863,26 +2863,128 @@ y un número o signo.
                         <outlet property="viewProgessContainer" destination="XQf-or-yKO" id="IC0-aA-aly"/>
                         <outlet property="viewTarjetaVirtual" destination="geZ-gA-aY0" id="R6L-be-Lii"/>
                         <segue destination="baY-Ag-y4x" kind="presentation" identifier="terminosSegue" id="zBm-8q-jNX"/>
+                        <segue destination="uMq-QE-NXS" kind="presentation" identifier="detallesSegue" modalPresentationStyle="fullScreen" id="qBn-cV-BKr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hwa-uo-2h2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1146.7289719626167" y="360.90712742980566"/>
         </scene>
-        <!--View Controller-->
+        <!--Detalle PromocionVC-->
         <scene sceneID="odT-Lb-b9h">
             <objects>
-                <viewController id="uMq-QE-NXS" sceneMemberID="viewController">
+                <viewController id="uMq-QE-NXS" customClass="DetallePromocionVC" customModule="Puntada" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HlH-uy-zcI">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZRI-x2-fuO">
+                                <rect key="frame" x="0.0" y="1" width="428" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="SDZ-Jf-0fk"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZB-Ea-TN1">
+                                <rect key="frame" x="30" y="437" width="368" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="2Pb-5Y-0rd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NeutraText-BookAlt" family="Neutra Text" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ycs-Ce-NnL">
+                                <rect key="frame" x="120" y="271" width="188" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="FAb-oy-OAG"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3HA-5J-1hz">
+                                <rect key="frame" x="30" y="311" width="368" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="nZN-Bw-8mc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NeutraText-Bold" family="Neutra Text" pointSize="35"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vi9-eN-h0n">
+                                <rect key="frame" x="281" y="677" width="112" height="30"/>
+                                <fontDescription key="fontDescription" name="NeutraText-BookAlt" family="Neutra Text" pointSize="20"/>
+                                <state key="normal" title="Ir a la Página"/>
+                                <connections>
+                                    <action selector="abrirLinkAction:" destination="uMq-QE-NXS" eventType="touchUpInside" id="Z2y-SB-IkH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rfa-ty-l6J">
+                                <rect key="frame" x="30" y="53" width="32" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="Fag-cw-EiR"/>
+                                    <constraint firstAttribute="height" constant="25" id="y47-Mr-rzH"/>
+                                </constraints>
+                                <state key="normal" image="back Icon white"/>
+                                <connections>
+                                    <action selector="backAction:" destination="uMq-QE-NXS" eventType="touchUpInside" id="2aF-qd-Jaz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQL-6a-RZs">
+                                <rect key="frame" x="30" y="752" width="368" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="yhL-1h-sid"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NeutraText-BookAlt" family="Neutra Text" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="phE-oM-nPH">
+                                <rect key="frame" x="40" y="747" width="348" height="1"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="xXw-r5-w5H"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="uAm-mx-2uH"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.90622976040000003" green="0.90622976040000003" blue="0.90622976040000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3HA-5J-1hz" firstAttribute="leading" secondItem="uAm-mx-2uH" secondAttribute="leading" constant="30" id="4eo-EU-vlj"/>
+                            <constraint firstItem="ZRI-x2-fuO" firstAttribute="top" secondItem="uAm-mx-2uH" secondAttribute="top" constant="-43" id="Ab0-vx-k4d"/>
+                            <constraint firstItem="phE-oM-nPH" firstAttribute="leading" secondItem="uAm-mx-2uH" secondAttribute="leading" constant="40" id="BIt-Xb-gW7"/>
+                            <constraint firstItem="BZB-Ea-TN1" firstAttribute="leading" secondItem="uAm-mx-2uH" secondAttribute="leading" constant="30" id="HL5-u9-n3f"/>
+                            <constraint firstItem="phE-oM-nPH" firstAttribute="top" secondItem="Vi9-eN-h0n" secondAttribute="bottom" constant="40" id="PD8-SJ-KPI"/>
+                            <constraint firstItem="3HA-5J-1hz" firstAttribute="top" secondItem="ycs-Ce-NnL" secondAttribute="bottom" constant="5" id="PXt-bs-eql"/>
+                            <constraint firstItem="TQL-6a-RZs" firstAttribute="leading" secondItem="uAm-mx-2uH" secondAttribute="leading" constant="30" id="UT2-Uk-7Qh"/>
+                            <constraint firstItem="ZRI-x2-fuO" firstAttribute="leading" secondItem="uAm-mx-2uH" secondAttribute="leading" id="ald-pK-geP"/>
+                            <constraint firstItem="Vi9-eN-h0n" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="uAm-mx-2uH" secondAttribute="leading" constant="10" id="b24-Vn-kX4"/>
+                            <constraint firstItem="uAm-mx-2uH" firstAttribute="trailing" secondItem="3HA-5J-1hz" secondAttribute="trailing" constant="30" id="bRc-AK-w6y"/>
+                            <constraint firstItem="Rfa-ty-l6J" firstAttribute="top" secondItem="uAm-mx-2uH" secondAttribute="top" constant="9" id="bkd-dO-sS3"/>
+                            <constraint firstItem="uAm-mx-2uH" firstAttribute="trailing" secondItem="TQL-6a-RZs" secondAttribute="trailing" constant="30" id="co2-bt-o4a"/>
+                            <constraint firstItem="Rfa-ty-l6J" firstAttribute="leading" secondItem="uAm-mx-2uH" secondAttribute="leading" constant="30" id="e2U-Ir-cp0"/>
+                            <constraint firstItem="ycs-Ce-NnL" firstAttribute="leading" secondItem="uAm-mx-2uH" secondAttribute="leading" constant="120" id="h6I-OT-mVV"/>
+                            <constraint firstItem="BZB-Ea-TN1" firstAttribute="top" secondItem="3HA-5J-1hz" secondAttribute="bottom" constant="6" id="hCh-pN-kRP"/>
+                            <constraint firstItem="uAm-mx-2uH" firstAttribute="trailing" secondItem="phE-oM-nPH" secondAttribute="trailing" constant="40" id="htL-Xi-y2z"/>
+                            <constraint firstItem="Rfa-ty-l6J" firstAttribute="top" secondItem="uAm-mx-2uH" secondAttribute="top" constant="9" id="jPv-t0-gcK"/>
+                            <constraint firstItem="uAm-mx-2uH" firstAttribute="trailing" secondItem="ZRI-x2-fuO" secondAttribute="trailing" id="kNL-3S-POh"/>
+                            <constraint firstItem="TQL-6a-RZs" firstAttribute="top" secondItem="phE-oM-nPH" secondAttribute="bottom" constant="4" id="kS3-IN-nUC"/>
+                            <constraint firstItem="uAm-mx-2uH" firstAttribute="trailing" secondItem="BZB-Ea-TN1" secondAttribute="trailing" constant="30" id="nJA-26-Eek"/>
+                            <constraint firstItem="Vi9-eN-h0n" firstAttribute="top" secondItem="BZB-Ea-TN1" secondAttribute="bottom" constant="40" id="oeh-Lu-fyJ"/>
+                            <constraint firstItem="uAm-mx-2uH" firstAttribute="trailing" secondItem="Vi9-eN-h0n" secondAttribute="trailing" constant="35" id="qTr-E6-GES"/>
+                            <constraint firstItem="ycs-Ce-NnL" firstAttribute="top" secondItem="ZRI-x2-fuO" secondAttribute="bottom" constant="20" id="qbi-EB-tS0"/>
+                            <constraint firstItem="uAm-mx-2uH" firstAttribute="trailing" secondItem="ycs-Ce-NnL" secondAttribute="trailing" constant="120" id="tLo-gz-XJ0"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnAbrirLink" destination="Vi9-eN-h0n" id="sTK-au-w6t"/>
+                        <outlet property="imgLogoCompania" destination="ycs-Ce-NnL" id="2dn-GB-ht8"/>
+                        <outlet property="imgPromocion" destination="ZRI-x2-fuO" id="2QC-9u-YgV"/>
+                        <outlet property="lblDescripcion" destination="BZB-Ea-TN1" id="bS4-hF-HdA"/>
+                        <outlet property="lblTitulo" destination="3HA-5J-1hz" id="JaS-iT-dca"/>
+                        <outlet property="lblVigencia" destination="TQL-6a-RZs" id="OOB-tD-uwF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QXQ-AR-I2U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1811" y="281"/>
+            <point key="canvasLocation" x="2104" y="271"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

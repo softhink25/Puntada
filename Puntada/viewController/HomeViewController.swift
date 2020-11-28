@@ -11,6 +11,7 @@ import ProgressBarKit
 import KVNProgress
 import JMMaskTextField_Swift
 class HomeViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource {
+    var selectedIndex = 0;
    @IBOutlet weak var imgUsuario: UIImageView!
     @IBOutlet weak var imgProgreso: UIImageView!
     @IBOutlet weak var lblImporte: UILabel!
@@ -78,7 +79,10 @@ class HomeViewController: UIViewController,UICollectionViewDelegate,UICollection
         cornerRadii: CGSize(width: 8, height: 8)
     )
 
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.selectedIndex = indexPath.row;
+        performSegue(withIdentifier:  "detallesSegue", sender: nil)
+    }
     @IBAction func btnPerfilAction(_ sender: UIButton) {
         cambiarBoton(activo: "perfil")
     }
@@ -257,6 +261,10 @@ class HomeViewController: UIViewController,UICollectionViewDelegate,UICollection
             self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "detallesSegue"){
+            let destView = segue.destination as! DetallePromocionVC
+            destView.promocion = promociones[self.selectedIndex]
+        }
         if(segue.identifier == "terminosSegue"){
             let destView = segue.destination as! ParametroVC
             destView.tipo = 1
